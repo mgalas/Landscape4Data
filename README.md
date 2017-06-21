@@ -2,7 +2,7 @@
 Finding useful datasets on-line can be tricky, therefore, we want to have a common place with a list of open-access as well as licensed datasets divided by categories
 
 ## List of data sets
-- [https://data.gov.uk/](https://data.gov.uk/)
+- [data.gov.uk/](https://data.gov.uk/)
 - [CDRC (CKAN-based)](https://data.cdrc.ac.uk/)
 - [Open Street Map](https://www.openstreetmap.org/#map=2/50.3/-79.8)
 - [Ordnance Survey (OS)](https://www.ordnancesurvey.co.uk/)
@@ -20,4 +20,4 @@ Finding useful datasets on-line can be tricky, therefore, we want to have a comm
 - [UCL MapTube](http://www.maptube.org/)
 - [Mosaic](http://www.experian.co.uk/marketing-services/products/mosaic-uk.html)
 - [Ocean](https://www.oceanwise.eu/oceanography/ocean-database/#)
-- [Ocean Data View](https://odv.awi.de/)
+    - [Ocean Data View](https://odv.awi.de/)
