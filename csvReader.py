@@ -49,8 +49,8 @@ def addInObj (stdID):
 def updateCount (stationID):
     stationIDObj[pos][1] += 1
 
-with open('01aJourneyDataExtract10Jan16-23Jan16.csv', newline='') as csvfile:
-    tflReader = csv.reader(csvfile, delimiter=',', quotechar='|')
+with open('../01aJourneyDataExtract10Jan16-23Jan16.csv', newline='') as csvfile:
+    tflReader = csv.reader(csvfile, delimiter=',')
     i = 0
     for row in tflReader:
         if (i != 0):
