@@ -2,7 +2,6 @@ import csv, requests, json
 
 
 stationIDObj = [];
-pos = 0;
 
 
 #Have to work on this part
@@ -23,20 +22,21 @@ def getLatLon(str):
 #Till here!!!!!!!!!!!!!!!!!!!!
 
 def groupStationID (stationID):
-    if (inObj(stationID) == False):
+    boolVal,pos = inObj(stationID)
+    if not boolVal:
         addInObj(stationID)
     else:
-        updateCount(stationID)
+        updateCount(stationID,pos)
 
 def inObj (stdID):
     pos = 0
     if (len(stationIDObj) == 0):
-        return False
+        return False,pos
     for item in stationIDObj:
         if item[0] == stdID:
-            return True
+            return True,pos
         pos += 1
-    return False
+    return False,pos
 
 
 def addInObj (stdID):
@@ -46,7 +46,7 @@ def addInObj (stdID):
     ])
 
 
-def updateCount (stationID):
+def updateCount (stationID,pos):
     stationIDObj[pos][1] += 1
 
 with open('../01aJourneyDataExtract10Jan16-23Jan16.csv', newline='') as csvfile:
