@@ -55,7 +55,7 @@ with open('../01aJourneyDataExtract10Jan16-23Jan16.csv', newline='') as csvfile:
     for row in tflReader:
         if (i != 0):
             stationID = row[5]
-            stationID = stationID[1:]
+            # stationID = stationID[1:]
             groupStationID(stationID)
         i += 1
     print(stationIDObj)
