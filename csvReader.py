@@ -9,13 +9,22 @@ def tflApi(item):
     urlQueryid = item.replace(" ","%20")
     url = "https://api.tfl.gov.uk/BikePoint/Search?query="+urlQueryid+"&app_key=c9dcd95b35785f8c19a41ce2d384ea41&app_id=3ccf74d3"
     response = requests.get(url)
-    indObj = response.json()[0]
+    try:
+        indObj = response.json()[0]
+    except Exception as e:
+        indObj = None
+        print (e)
+
+    print (indObj)
     return (indObj)
 
 def getLatLon(str):
         res = tflApi(str)
-        lat = res.get('lat')
-        lon = res.get('lon')
+        lat = ''
+        lon = ''
+        if not (res == None):
+            lat = res.get('lat')
+            lon = res.get('lon')
         return ([lat,lon])
 
 
@@ -38,13 +47,8 @@ def inObj (stdID):
         pos += 1
     return False,pos
 
-
 def addInObj (stdID):
-    # latlon = getLatLon(stdID)
-    stationIDObj.append([stdID,1
-    #latlon[0],latlon[1]
-    ])
-
+    stationIDObj.append([stdID,1])
 
 def updateCount (stationID,pos):
     stationIDObj[pos][1] += 1
@@ -58,4 +62,10 @@ with open('../01aJourneyDataExtract10Jan16-23Jan16.csv', newline='') as csvfile:
             # stationID = stationID[1:]
             groupStationID(stationID)
         i += 1
+    print (stationIDObj)
+    print ("Done Counting Now Getting Lat/Lon")
+    for item in stationIDObj:
+        latlon = getLatLon(item[0])
+        item.append(latlon[0]);
+        item.append(latlon[1]);
     print(stationIDObj)
