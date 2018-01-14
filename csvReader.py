@@ -4,7 +4,6 @@ import csv, requests, json
 stationIDObj = [];
 
 
-#Have to work on this part
 def tflApi(item):
     urlQueryid = item.replace(" ","%20")
     url = "https://api.tfl.gov.uk/BikePoint/Search?query="+urlQueryid+"&app_key=c9dcd95b35785f8c19a41ce2d384ea41&app_id=3ccf74d3"
@@ -15,20 +14,16 @@ def tflApi(item):
         indObj = None
         print (e)
 
-    print (indObj)
     return (indObj)
 
 def getLatLon(str):
-        res = tflApi(str)
-        lat = ''
-        lon = ''
-        if not (res == None):
-            lat = res.get('lat')
-            lon = res.get('lon')
-        return ([lat,lon])
-
-
-#Till here!!!!!!!!!!!!!!!!!!!!
+    res = tflApi(str)
+    lat = ''
+    lon = ''
+    if not (res == None):
+        lat = res.get('lat')
+        lon = res.get('lon')
+    return ([lat,lon])
 
 def groupStationID (stationID):
     boolVal,pos = inObj(stationID)
@@ -62,10 +57,14 @@ with open('../01aJourneyDataExtract10Jan16-23Jan16.csv', newline='') as csvfile:
             # stationID = stationID[1:]
             groupStationID(stationID)
         i += 1
-    print (stationIDObj)
     print ("Done Counting Now Getting Lat/Lon")
     for item in stationIDObj:
         latlon = getLatLon(item[0])
         item.append(latlon[0]);
         item.append(latlon[1]);
-    print(stationIDObj)
+    print("Done!!")
+    with open('./output.csv','w') as output:
+        for sublist in stationIDObj:
+            for item in sublist:
+                output.write(str(item) + ',')
+            output.write('\n')
