@@ -2,15 +2,46 @@ import requests, json
 import Retrieve as retrieve
 
 class CleanOrganise:
-    data = []
+    dataFromFile = []
+    organisedData = []
+
 
     def __init__(self,d):
-        self.data = d
+        self.dataFromFile = d
 
-    def cleanData(self):
-        for item in self.data:
-            print (item)
+    def inObj (self,queryValue):
+        pos = 0
+        if (len(self.organisedData) == 0):
+            return False,pos
+        for data in self.organisedData:
+            if data[0] == queryValue:
+                return True,pos
+            pos += 1
+        return False,pos
+
+    def addInObj (self,newValue):
+        self.organisedData.append([newValue,1])
+
+    def updateCount (self,pos):
+        self.organisedData[pos][1] += 1
+
+    def groupStationID (self,groupValue):
+        boolVal,pos = self.inObj(groupValue)
+        if not boolVal:
+            self.addInObj(groupValue)
+        else:
+            self.updateCount(pos)
+
+
+    def cleanData(self,dataValue):
+        self.organisedData = []
+        for item in self.dataFromFile:
+            self.groupStationID(item[dataValue])
+        print(self.organisedData)
+
+
+
 
 retrieveObj = retrieve.Retrieve('../01aJourneyDataExtract10Jan16-23Jan16.csv')
 cleanOrganiseObj = CleanOrganise(retrieveObj.getData())
-cleanOrganiseObj.cleanData()
+cleanOrganiseObj.cleanData(5)
