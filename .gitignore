@@ -23,3 +23,6 @@ hs_err_pid*
 
 #Any CSV Files
 *.csv
+
+#all cache
+/__pycache__
