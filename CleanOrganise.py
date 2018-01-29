@@ -1,5 +1,4 @@
 import requests, json
-import Retrieve as retrieve
 
 class CleanOrganise:
     dataFromFile = []
@@ -38,10 +37,3 @@ class CleanOrganise:
         for item in self.dataFromFile:
             self.groupStationID(item[dataValue])
         print(self.organisedData)
-
-
-
-
-retrieveObj = retrieve.Retrieve('../01aJourneyDataExtract10Jan16-23Jan16.csv')
-cleanOrganiseObj = CleanOrganise(retrieveObj.getData())
-cleanOrganiseObj.cleanData(5)
