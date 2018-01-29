@@ -3,7 +3,7 @@ import CleanOrganise, Retrieve
 class Main:
     def __init__(self):
         retrieveObj = Retrieve.Retrieve('../01aJourneyDataExtract10Jan16-23Jan16.csv')
-        cleanOrganiseObj = CleanOrganise.CleanOrganise(retrieveObj.getData())
+        cleanOrganiseObj = CleanOrganise.CleanOrganise(retrieveObj.getData("csv"))
         cleanOrganiseObj.cleanData(5)
 
 if __name__ == "__main__":

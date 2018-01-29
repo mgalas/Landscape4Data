@@ -23,6 +23,7 @@ class Retrieve:
 
 
     # So that Multipe types of data can be imported
-    def getData(self):
-        self.getCSV()
+    def getData(self,type):
+        if type == "csv":
+            self.getCSV()
         return self.data
