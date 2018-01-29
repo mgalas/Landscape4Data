@@ -26,3 +26,6 @@ hs_err_pid*
 
 #all cache
 /__pycache__
+
+#old csvReader.py
+/csvReader.py
