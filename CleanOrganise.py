@@ -1,4 +1,6 @@
 import requests, json, Output
+from geopy.geocoders import Nominatim
+
 
 class CleanOrganise:
     dataFromFile = []
@@ -46,7 +48,6 @@ class CleanOrganise:
         except Exception as e:
             indObj = None
             print (e)
-
         return (indObj)
 
     def getLatLon(self,str):
@@ -57,6 +58,11 @@ class CleanOrganise:
             lat = res.get('lat')
             lon = res.get('lon')
         return ([lat,lon])
+    def getNodeID(self,str):
+        geolocator = Nominatim()
+        location = geolocator.reverse(str)
+        return (location.raw['osm_id'])
+
 
     def cleanData(self,dataValue):
         self.organisedData = []
@@ -67,5 +73,11 @@ class CleanOrganise:
             latlon= self.getLatLon(sortedItem[0])
             sortedItem.append(latlon[0])
             sortedItem.append(latlon[1])
+
+        print('now retrieving node id')
+        for sortedItem in self.organisedData:
+            coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
+            nodeID = self.getNodeID(coordString)
+            sortedItem.append(nodeID)
             # print(sortedItem)
         return (self.organisedData)
