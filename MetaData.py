@@ -1,7 +1,8 @@
-import os
+import os, Output
 
 class MetaData:
     filePath = ''
+    fileName = ''
     dataFromFile = []
     header = []
     fileDetails = []
@@ -11,7 +12,9 @@ class MetaData:
         self.header = dataFromFile[0]
         self.dataFromFile = dataFromFile[1:]
         self.filePath = filePath
+        self.fileName = self.filePath[:-4]
         self.askForMetaTags()
+        self.writeToFile()
 
     def getFileDetails(self):
         data = os.stat(self.filePath)
@@ -61,4 +64,5 @@ class MetaData:
         del self.metaTags[index-1]
 
     def writeToFile(self):
-        with open(,'w') as outputFile:
+        newFilePath = self.fileName + "_METAdata.csv"
+        Output.Output(self.metaTags,newFilePath,1)
