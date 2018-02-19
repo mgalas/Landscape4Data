@@ -1,4 +1,4 @@
-import requests, json
+import requests, json, Output
 
 class CleanOrganise:
     dataFromFile = []
@@ -42,3 +42,4 @@ class CleanOrganise:
         self.organisedData = []
         for item in self.dataFromFile:
             self.groupStationID(item[dataValue])
+        return (self.organisedData)
