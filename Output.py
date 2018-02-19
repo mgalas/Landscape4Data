@@ -1,0 +1,21 @@
+import csv, json
+
+class Output:
+    dataToBeWritten = []
+    newfilePath = ""
+    arrayType = 1;
+
+    def __init__(self,data,filePath,arrayType):
+        self.dataToBeWritten = data
+        self.newfilePath = filePath
+        self.arrayType = arrayType
+        self.writeToFile()
+
+    def writeToFile(self):
+        with open(self.newfilePath, "w+") as outputFile:
+            csvWriter = csv.writer(outputFile, delimiter=',')
+            if self.arrayType == 2:
+                for row in self.dataToBeWritten:
+                        csvWriter.writerow(row)
+            else:
+                csvWriter.writerow(self.dataToBeWritten)
