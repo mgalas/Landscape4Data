@@ -12,9 +12,8 @@ class MetaData:
         self.header = dataFromFile[0]
         self.dataFromFile = dataFromFile[1:]
         self.filePath = filePath
-        self.fileName = self.filePath[:-4]
         self.askForMetaTags()
-        self.writeToFile()
+
 
     def getFileDetails(self):
         data = os.stat(self.filePath)
@@ -34,7 +33,7 @@ class MetaData:
                 moreInput = False
             else:
                 print("Invalid Input, Please try again")
-        self.writeToFile()
+
 
     def listMetaTags(self):
         print("List of Meta Tags")
@@ -49,7 +48,7 @@ class MetaData:
             confirm = input("Is this correct? \nType 1 for yes 2 for no \n\n")
             if confirm == "1":
                 isCorrect = True
-        self.metaTags.append(newTag)
+        self.metaTags.append([newTag])
 
     def removeMetaTag(self):
         isDone = False
@@ -63,6 +62,5 @@ class MetaData:
                 isDone = True
         del self.metaTags[index-1]
 
-    def writeToFile(self):
-        newFilePath = self.fileName + "_METAdata.csv"
-        Output.Output(self.metaTags,newFilePath,1)
+    def getData(self):
+        return (self.metaTags)

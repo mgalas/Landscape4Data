@@ -9,6 +9,7 @@ class Output:
         self.dataToBeWritten = data
         self.newfilePath = filePath
         self.arrayType = arrayType
+        print(self.dataToBeWritten)
         self.writeToFile()
 
     def writeToFile(self):
@@ -16,6 +17,8 @@ class Output:
             csvWriter = csv.writer(outputFile, delimiter=',')
             if self.arrayType == 2:
                 for row in self.dataToBeWritten:
-                        csvWriter.writerow(row)
+                    for item in row:
+                        for data in item:
+                            csvWriter.writerow(data)
             else:
                 csvWriter.writerow(self.dataToBeWritten)
