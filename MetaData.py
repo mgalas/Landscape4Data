@@ -7,13 +7,12 @@ class MetaData:
     header = []
     fileDetails = []
     metaTags = []
+    metaData = []
     def __init__(self,dataFromFile,filePath):
         self.dataFromFile = []
         self.header = dataFromFile[0]
         self.dataFromFile = dataFromFile[1:]
         self.filePath = filePath
-        self.askForMetaTags()
-
 
     def getFileDetails(self):
         data = os.stat(self.filePath)
@@ -63,4 +62,10 @@ class MetaData:
         del self.metaTags[index-1]
 
     def getData(self):
-        return (self.metaTags)
+        print("Collecting Meta Data...")
+        self.askForMetaTags()
+        self.fileDetails = self.getFileDetails()
+        self.metaData.append([self.fileDetails])
+        self.metaData.append([self.metaTags])
+        print("Meta Data Collected.")
+        return (self.metaData)

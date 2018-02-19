@@ -6,7 +6,7 @@ class CleanOrganise:
     dataFromFile = []
     organisedData = []
     header = []
-
+    counter = 0
 
     def __init__(self,d):
         self.dataFromFile = []
@@ -47,37 +47,43 @@ class CleanOrganise:
             indObj = response.json()[0]
         except Exception as e:
             indObj = None
-            print (e)
         return (indObj)
 
-    def getLatLon(self,str):
-        res = self.tflApi(str)
+    def getLatLon(self,stationName):
+        res = self.tflApi(stationName)
         lat = ''
         lon = ''
         if not (res == None):
             lat = res.get('lat')
             lon = res.get('lon')
         return ([lat,lon])
-    def getNodeID(self,str):
+
+    def getNodeID(self,coordStr):
         geolocator = Nominatim()
-        location = geolocator.reverse(str)
+        location = geolocator.reverse(coordStr)
         return (location.raw['osm_id'])
 
 
     def cleanData(self,dataValue):
+        print("Cleaning and Organising Data...")
         self.organisedData = []
         for item in self.dataFromFile:
             self.groupStationID(item[dataValue])
-        print('now retrieving lat and long')
+
+        print('\t retrieving lat and long')
+
+        self.counter = 0
         for sortedItem in self.organisedData:
+            self.counter += 1
             latlon= self.getLatLon(sortedItem[0])
             sortedItem.append(latlon[0])
             sortedItem.append(latlon[1])
 
-        print('now retrieving node id')
-        for sortedItem in self.organisedData:
-            coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
-            nodeID = self.getNodeID(coordString)
-            sortedItem.append(nodeID)
+        print('\t retrieving node id')
+        # for sortedItem in self.organisedData:
+        #     coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
+        #     nodeID = self.getNodeID(coordString)
+        #     sortedItem.append(nodeID)
             # print(sortedItem)
+        print("Data Cleaned and Organised.")
         return (self.organisedData)
