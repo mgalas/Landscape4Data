@@ -24,6 +24,9 @@ hs_err_pid*
 #Any CSV Files
 *.csv
 
+#Any XML Files
+*.xml
+
 #all cache
 /__pycache__
 
