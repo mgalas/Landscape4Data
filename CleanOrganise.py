@@ -37,9 +37,35 @@ class CleanOrganise:
         else:
             self.updateCount(pos)
 
+    def tflApi(self,item):
+        urlQueryid = item.replace(" ","%20")
+        url = "https://api.tfl.gov.uk/BikePoint/Search?query="+urlQueryid+"&app_key=c9dcd95b35785f8c19a41ce2d384ea41&app_id=3ccf74d3"
+        response = requests.get(url)
+        try:
+            indObj = response.json()[0]
+        except Exception as e:
+            indObj = None
+            print (e)
+
+        return (indObj)
+
+    def getLatLon(self,str):
+        res = self.tflApi(str)
+        lat = ''
+        lon = ''
+        if not (res == None):
+            lat = res.get('lat')
+            lon = res.get('lon')
+        return ([lat,lon])
 
     def cleanData(self,dataValue):
         self.organisedData = []
         for item in self.dataFromFile:
             self.groupStationID(item[dataValue])
+        print('now retrieving lat and long')
+        for sortedItem in self.organisedData:
+            latlon= self.getLatLon(sortedItem[0])
+            sortedItem.append(latlon[0])
+            sortedItem.append(latlon[1])
+            # print(sortedItem)
         return (self.organisedData)
