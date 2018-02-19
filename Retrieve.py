@@ -19,7 +19,6 @@ class Retrieve:
                 for j in range(len(item)):
                     self.data[i].append(item[j])
                 i+=1
-            self.data = self.data[1:]
 
 
     # So that Multipe types of data can be imported

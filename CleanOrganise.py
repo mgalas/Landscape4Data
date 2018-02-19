@@ -3,10 +3,16 @@ import requests, json
 class CleanOrganise:
     dataFromFile = []
     organisedData = []
+    header = []
 
 
     def __init__(self,d):
+        self.dataFromFile = []
+        self.organisedData = []
+        self.header = []
         self.dataFromFile = d
+        self.header = self.dataFromFile[0]
+        self.dataFromFile = self.dataFromFile[1:]
 
     def inObj (self,queryValue):
         pos = 0
@@ -36,4 +42,3 @@ class CleanOrganise:
         self.organisedData = []
         for item in self.dataFromFile:
             self.groupStationID(item[dataValue])
-        print(self.organisedData)
