@@ -1,9 +1,10 @@
-import CleanOrganise, Retrieve, MetaData, Output
+import CleanOrganise, Retrieve, MetaData, Output, Audit
 
 class Main:
     filePath = ''
     metaFilePath = ''
     data = []
+    auditData = []
     cleanedData = []
     metaData = []
     outputData = []
@@ -15,8 +16,10 @@ class Main:
 
         retrieveObj = Retrieve.Retrieve(self.filePath)
         self.data = retrieveObj.getData("csv")
+        auditObj = Audit.Audit(self.data)
+        self.auditData = auditObj.getAuditedData()
 
-        cleanOrganiseObj = CleanOrganise.CleanOrganise(self.data)
+        cleanOrganiseObj = CleanOrganise.CleanOrganise(self.auditData)
         self.cleanedData = cleanOrganiseObj.cleanData(5)
 
         metaDataObj = MetaData.MetaData(self.data, self.filePath)
