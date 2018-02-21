@@ -54,7 +54,7 @@ class MetaData:
         index = 0
         while not isDone:
             self.listMetaTags()
-            index = input("Please type in the position of the meta tag to be removed. \n\n")
+            index = int(input("Please type in the position of the meta tag to be removed. \n\n"))
             print(self.metaTags[index-1])
             confirm = input("Is this the tag you wish to delete? \nType 1 for yes 2 for no \n\n")
             if confirm == "1":

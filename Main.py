@@ -1,4 +1,4 @@
-import CleanOrganise, Retrieve, MetaData, Output, Audit
+import CleanOrganise, Retrieve, MetaData, Output, Audit, Match
 
 class Main:
     filePath = ''
@@ -10,7 +10,8 @@ class Main:
     outputData = []
     def __init__(self):
 
-        self.filePath = './data/01aJourneyDataExtract10Jan16-23Jan16.csv'
+        # self.filePath = './data/01aJourneyDataExtract10Jan16-23Jan16.csv'
+        self.filePath = './data/test.csv'
         self.metaFilePath = self.filePath[:-4]
         self.metaFilePath = self.metaFilePath + "_META.csv"
 
@@ -31,6 +32,8 @@ class Main:
         self.outputData.append([self.cleanedData])
 
         Output.Output(self.outputData, self.metaFilePath, 2)
+
+        Match.Match(self.metaFilePath)
 
 
 
