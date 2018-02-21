@@ -40,14 +40,14 @@ class MetaData:
 
     def addMetaTag(self):
         isCorrect = False
-        newTag = ""
+        newTag = None
         while not isCorrect:
             newTag = input("Please type in Meta Tag and hit enter \n\n")
             print(newTag)
             confirm = input("Is this correct? \nType 1 for yes 2 for no \n\n")
             if confirm == "1":
                 isCorrect = True
-        self.metaTags.append([newTag])
+        self.metaTags.append(newTag)
 
     def removeMetaTag(self):
         isDone = False
@@ -65,7 +65,7 @@ class MetaData:
         print("Collecting Meta Data...")
         self.askForMetaTags()
         self.fileDetails = self.getFileDetails()
-        self.metaData.append([self.fileDetails])
-        self.metaData.append([self.metaTags])
+        # self.metaData.append([self.fileDetails])
+        self.metaData.append(self.metaTags)
         print("Meta Data Collected.")
         return (self.metaData)

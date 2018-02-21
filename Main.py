@@ -24,7 +24,9 @@ class Main:
 
         metaDataObj = MetaData.MetaData(self.data, self.filePath)
         self.metaData = metaDataObj.getData()
-
+        newAuditObj = Audit.Audit(self.cleanedData)
+        self.cleanedData = newAuditObj.getAuditedData()
+        # print(self.cleanedData)
         self.outputData.append([self.metaData])
         self.outputData.append([self.cleanedData])
 

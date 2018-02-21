@@ -27,4 +27,5 @@ class Retrieve:
         if type == "csv":
             self.getCSV()
         print("Data Retrieved.")
+        # print(self.data)
         return self.data

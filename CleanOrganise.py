@@ -41,12 +41,13 @@ class CleanOrganise:
 
     def tflApi(self,item):
         urlQueryid = item.replace(" ","%20")
-        url = "https://api.tfl.gov.uk/BikePoint/Search?query="+urlQueryid+"&app_key=c9dcd95b35785f8c19a41ce2d384ea41&app_id=3ccf74d3"
+        url = "https://api.tfl.gov.uk/BikePoint/Search?query="+urlQueryid+"&app_key=192e25146670a8b781a9c53a01b3027f&app_id=9a47548b"
         response = requests.get(url)
         try:
             indObj = response.json()[0]
         except Exception as e:
             indObj = None
+            print("Invalid TFL API response")
         return (indObj)
 
     def getLatLon(self,stationName):
@@ -60,8 +61,13 @@ class CleanOrganise:
 
     def getNodeID(self,coordStr):
         geolocator = Nominatim()
-        location = geolocator.reverse(coordStr)
-        return (location.raw['osm_id'])
+        try:
+            location = geolocator.reverse(coordStr)
+            return (location.raw['osm_id'])
+        except Exception as e:
+            print("\t\t"+str(e))
+        return ("")
+
 
 
     def cleanData(self,dataValue):
@@ -80,10 +86,10 @@ class CleanOrganise:
             sortedItem.append(latlon[1])
 
         print('\t retrieving node id')
-        # for sortedItem in self.organisedData:
-        #     coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
-        #     nodeID = self.getNodeID(coordString)
-        #     sortedItem.append(nodeID)
+        for sortedItem in self.organisedData:
+            coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
+            nodeID = self.getNodeID(coordString)
+            sortedItem.append(nodeID)
             # print(sortedItem)
         print("Data Cleaned and Organised.")
         return (self.organisedData)
