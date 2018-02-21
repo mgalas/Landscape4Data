@@ -1,5 +1,6 @@
 import csv
 class Retrieve:
+    counter = 0
     data = []
     filePath = ""
     def __init__(self,fp):
@@ -19,9 +20,14 @@ class Retrieve:
                 for j in range(len(item)):
                     self.data[i].append(item[j])
                 i+=1
+                self.counterPlus()
 
+    def counterPlus(self):
+        self.counter += 1
 
-    # So that Multipe types of data can be imported
+    def getCounter(self):
+        return self.counter
+
     def getData(self,type):
         print("Retrieving Data...")
         if type == "csv":

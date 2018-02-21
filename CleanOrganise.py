@@ -6,7 +6,7 @@ class CleanOrganise:
     dataFromFile = []
     organisedData = []
     header = []
-    counter = 0
+    groupCounter = 0 #for testing
 
     def __init__(self,d):
         self.dataFromFile = []
@@ -38,6 +38,7 @@ class CleanOrganise:
             self.addInObj(groupValue)
         else:
             self.updateCount(pos)
+            self.groupCounterPlus()
 
     def tflApi(self,item):
         urlQueryid = item.replace(" ","%20")
@@ -63,6 +64,11 @@ class CleanOrganise:
         location = geolocator.reverse(coordStr)
         return (location.raw['osm_id'])
 
+    def groupCounterPlus(self):
+        self.groupCounter += 1
+
+    def getGroupCounter(self):
+        return self.groupCounter
 
     def cleanData(self,dataValue):
         print("Cleaning and Organising Data...")
@@ -80,10 +86,10 @@ class CleanOrganise:
             sortedItem.append(latlon[1])
 
         print('\t retrieving node id')
-        # for sortedItem in self.organisedData:
-        #     coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
-        #     nodeID = self.getNodeID(coordString)
-        #     sortedItem.append(nodeID)
-            # print(sortedItem)
+        for sortedItem in self.organisedData:
+            coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
+            nodeID = self.getNodeID(coordString)
+            sortedItem.append(nodeID)
+            print(sortedItem)
         print("Data Cleaned and Organised.")
         return (self.organisedData)

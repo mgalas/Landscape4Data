@@ -3,6 +3,7 @@ import time
 class Audit:
     data = []
     auditData = []
+    count = 0
     def __init__(self, data):
         self.data = data
 
