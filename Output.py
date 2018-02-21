@@ -13,11 +13,7 @@ class Output:
         self.writeToFile()
 
     def writeToFile(self):
-<<<<<<< HEAD
         with open(self.newfilePath, "w+", newline='') as outputFile:
-=======
-        with open(self.newfilePath, "w+", newline= '') as outputFile:
->>>>>>> e35b32ec45ab7edc1a215c0bd14a0b4b50e65be2
             csvWriter = csv.writer(outputFile, delimiter=',')
             if self.arrayType == 2:
                 for row in self.dataToBeWritten:

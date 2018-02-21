@@ -96,10 +96,6 @@ class CleanOrganise:
             coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
             nodeID = self.getNodeID(coordString)
             sortedItem.append(nodeID)
-<<<<<<< HEAD
             # print(sortedItem)
-=======
-            print(sortedItem)
->>>>>>> e35b32ec45ab7edc1a215c0bd14a0b4b50e65be2
         print("Data Cleaned and Organised.")
         return (self.organisedData)
