@@ -1,4 +1,4 @@
-import CleanOrganise, Retrieve, MetaData, Output, Audit, Match
+import CleanOrganise, Retrieve, MetaData, Output, Audit, Match, time
 
 class Main:
     filePath = ''
@@ -9,9 +9,10 @@ class Main:
     metaData = []
     outputData = []
     def __init__(self):
+        start_time = time.time()
 
-        # self.filePath = './data/01aJourneyDataExtract10Jan16-23Jan16.csv'
-        self.filePath = './data/test.csv'
+        self.filePath = './data/01aJourneyDataExtract10Jan16-23Jan16.csv'
+        # self.filePath = './data/test.csv'
         self.metaFilePath = self.filePath[:-4]
         self.metaFilePath = self.metaFilePath + "_META.csv"
 
@@ -35,7 +36,8 @@ class Main:
 
         Match.Match(self.metaFilePath)
 
-
+        elapsed_time = time.time() - start_time
+        print("Time = " + str(elapsed_time) + "\n")
 
 if __name__ == "__main__":
     Main()

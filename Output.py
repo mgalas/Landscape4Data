@@ -9,7 +9,7 @@ class Output:
         self.dataToBeWritten = data
         self.newfilePath = filePath
         self.arrayType = arrayType
-        print(self.dataToBeWritten)
+        # print(self.dataToBeWritten)
         self.writeToFile()
 
     def writeToFile(self):
