@@ -9,11 +9,11 @@ class Output:
         self.dataToBeWritten = data
         self.newfilePath = filePath
         self.arrayType = arrayType
-        print(self.dataToBeWritten)
+        # print(self.dataToBeWritten)
         self.writeToFile()
 
     def writeToFile(self):
-        with open(self.newfilePath, "w+", newline= '') as outputFile:
+        with open(self.newfilePath, "w+", newline='') as outputFile:
             csvWriter = csv.writer(outputFile, delimiter=',')
             if self.arrayType == 2:
                 for row in self.dataToBeWritten:

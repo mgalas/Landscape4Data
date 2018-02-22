@@ -9,6 +9,7 @@ class Audit:
 
 
     def removeBlankRows(self):
+        self.auditData = []
         for item in self.data:
             allCorrect = True
             for data in item:

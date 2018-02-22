@@ -18,15 +18,21 @@ class Match:
         xmlData = open(xmlFile, 'w')
         xmlData.write('<?xml version="1.0" encoding="utf-8"?>' + "\n")
         xmlData.write('<osm version="0.6" generator="csvtoosm">' + "\n")
+        i=0
         for row in reader:
-            i=-1
+
             # print(row['id'])
             if 'id' in row:
                 osm_id = row['id']
-                action = "modify"
+                if osm_id == None:
+                    osm_id = i
+                    i += 1
+                    action = "create"
+                else:
+                    action = "modify"
             else:
                 osm_id = i
-                i -= 1
+                i += 1
                 action = "create"
             version = ''
             if 'version' in row:
