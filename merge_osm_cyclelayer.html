@@ -12,8 +12,8 @@
       }
       #info {
         position: absolute;
-        height: 4px;
-        width: 4px;
+        height: 1px;
+        width: 1px;
         z-index: 100;
       }
       .tooltip.in {
@@ -23,7 +23,7 @@
         border-top-color: white;
       }
       .tooltip-inner {
-        border: 30px solid white;
+        border: 2px solid white;
       }
     </style>
   </head>
@@ -31,14 +31,15 @@
     <div id="map" class="map"></div>
     <script>
       var OysterStationFill = new ol.style.Fill({
-        color: 'rgba(204, 0, 0, 0.8)'
+        color: 'rgba(254,0 , 0, 0.8)'
       });
       var OysterStationStroke = new ol.style.Stroke({
         color: 'rgba(204, 0, 0, 0.2)',
         width: 1
       });
       var textFill = new ol.style.Fill({
-        color: '#fff'
+        // color: '#fff'
+        color: 'rgba(254,0 , 0, 0.8)'
       });
       var textStroke = new ol.style.Stroke({
         color: 'rgba(0, 0, 0, 0.6)',
@@ -49,15 +50,18 @@
       });
 
       function createOysterStationStyle(feature) {
-
-        var radius =30;
-
+        //
+        var name =  feature.get('cycle');
+        var magnitude = parseFloat(name);
+         // window.alert(magnitude)
+        var radius = 0.05* (magnitude - 5);
+          // var radius = 5 + 20;
         return new ol.style.Style({
           geometry: feature.getGeometry(),
           image: new ol.style.RegularShape({
             radius1: radius,
             radius2: 3,
-            points: 5,
+            points: 6,
             angle: Math.PI,
             fill: OysterStationFill,
             stroke: OysterStationStroke
@@ -67,51 +71,51 @@
 
       var maxFeatureCount, vector;
       function calculateClusterInfo(resolution) {
-        maxFeatureCount = 0;
-        var features = vector.getSource().getFeatures();
-        var feature, radius;
-        for (var i = features.length - 1; i >= 0; --i) {
-          feature = features[i];
-          var originalFeatures = feature.get('features');
-          var extent = ol.extent.createEmpty();
-          var j, k;
-          for (j = 0, k = originalFeatures.length; j < k; ++j) {
-            ol.extent.extend(extent, originalFeatures[j].getGeometry().getExtent());
-          }
-          maxFeatureCount = Math.max(maxFeatureCount, k);
-          radius = 0.25 * (ol.extent.getWidth(extent) + ol.extent.getHeight(extent)) /
-              resolution;
-          feature.set('radius', radius);
+          maxFeatureCount = 0;
+          var features = vector.getSource().getFeatures();
+          var feature, radius;
+          for (var i = features.length - 1; i >= 0; --i) {
+            feature = features[i];}
+            var originalFeatures = feature.get('features');
+            var extent = ol.extent.createEmpty();
+            var j, k;
+            for (j = 0, k = originalFeatures.length; j < k; ++j) {
+              ol.extent.extend(extent, originalFeatures[j].getGeometry().getExtent());
+            }
+            maxFeatureCount = Math.max(maxFeatureCount, k);
+            radius = 0.4 * (ol.extent.getWidth(extent) + ol.extent.getHeight(extent)) /
+                resolution;
+            feature.set('radius', radius);
         }
-      }
 
-      var currentResolution;
-      function styleFunction(feature, resolution) {
-        if (resolution != currentResolution) {
-          calculateClusterInfo(resolution);
-          currentResolution = resolution;
-        }
-        var style;
-        var size = feature.get('features').length;
-        if (size > 1) {
-          style = new ol.style.Style({
-            image: new ol.style.Circle({
-              radius: feature.get('radius'),
-              fill: new ol.style.Fill({
-                color: [255, 153, 0, Math.min(0.8, 0.4 + (size / maxFeatureCount))]
-              })
-            }),
-            text: new ol.style.Text({
-              text: size.toString(),
-              fill: textFill,
-              stroke: textStroke
-            })
-          });
-        } else {
-          var originalFeature = feature.get('features')[0];
-          style = createOysterStationStyle(originalFeature);
-        }
-        return style;
+
+        var currentResolution;
+            function styleFunction(feature, resolution) {
+              if (resolution != currentResolution) {
+                calculateClusterInfo(resolution);
+                currentResolution = resolution;
+              }
+              var style;
+              var size = feature.get('features').length;
+              if (size > 30) {
+                style = new ol.style.Style({
+                  image: new ol.style.Circle({
+                    radius: 0.7*feature.get('radius'),
+                    fill: new ol.style.Fill({
+                      color: [255, 153, 0, 0.4]
+                    })
+                  }),
+                  text: new ol.style.Text({
+                    text: size.toString(),
+                    fill: textFill,
+                    stroke: textStroke
+                  })
+                });
+              } else {
+                var originalFeature = feature.get('features')[0];
+                style = createOysterStationStyle(originalFeature);
+              }
+              return style;
       }
 
       function selectStyleFunction(feature) {
@@ -119,6 +123,7 @@
           image: new ol.style.Circle({
             radius: feature.get('radius'),
             fill: invisibleFill
+            // fill:OysterStationFill
           })
         })];
         var originalFeatures = feature.get('features');
