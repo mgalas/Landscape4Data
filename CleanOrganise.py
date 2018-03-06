@@ -65,7 +65,7 @@ class CleanOrganise:
             indObj = response.json()[0]
         except Exception as e:
             indObj = None
-            print("\t\tInvalid TFL API response")
+            # print("\t\tInvalid TFL API response")
         if not indObj == None:
             self.TFLaddToCache(item, indObj)
         return (indObj)
