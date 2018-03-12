@@ -1,5 +1,5 @@
-import unittest, csv
-from Audit import Audit
+import unittest
+from src.Audit import Audit
 
 class Test_Audit (unittest.TestCase):
 

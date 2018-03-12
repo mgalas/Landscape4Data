@@ -1,5 +1,5 @@
-import unittest, csv
-from MetaData import MetaData
+import unittest
+from src.MetaData import MetaData
 
 class Test_MetaData (unittest.TestCase):
 

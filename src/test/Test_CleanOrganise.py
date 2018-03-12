@@ -1,5 +1,5 @@
 import unittest, requests
-from CleanOrganise import CleanOrganise
+from src.CleanOrganise import CleanOrganise
 from geopy.geocoders import Nominatim
 
 class Test_CleanOrganise (unittest.TestCase):

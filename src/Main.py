@@ -1,4 +1,6 @@
-import CleanOrganise, Retrieve, MetaData, Output, Audit, Match, time
+import time
+from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise
+
 
 class Main:
     filePath = ''

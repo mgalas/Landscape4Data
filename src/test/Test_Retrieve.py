@@ -1,5 +1,5 @@
 import unittest, csv
-from Retrieve import Retrieve
+from src.Retrieve import Retrieve
 
 class Test_Retrieve (unittest.TestCase):
     address = './data/test.csv'
