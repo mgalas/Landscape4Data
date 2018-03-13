@@ -42,7 +42,9 @@ class Match:
              # print key-value tags
             for k, v in row.items():
                 if k != 'lat' and k != 'long' and v != '':
-                 xmlData.write ('<tag k="%s" v="%s" />\n' %(k,v))
+                    strv = str(v)
+                    strv.replace('\&', "n")
+                    xmlData.write ('<tag k="%s" v="%s" />\n' %(k,strv))
             xmlData.write('  </node>\n' )
         xmlData.write('</osm>' + "\n")
         xmlData.close()
