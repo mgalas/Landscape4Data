@@ -6,6 +6,7 @@ class Audit:
     count = 0
     def __init__(self, data):
         self.data = data
+        self.auditData = []
 
 
     def removeBlankRows(self):

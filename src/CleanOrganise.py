@@ -1,5 +1,4 @@
-import requests, time, abc
-from geopy.geocoders import Nominatim
+import abc, requests, json
 
 
 class CleanOrganise(metaclass=abc.ABCMeta):

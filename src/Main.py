@@ -1,5 +1,5 @@
 import time
-from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise, tflCycle
+from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise, tflCycle, tflStationCount, tflOysterCount
 
 
 class Main:
@@ -10,35 +10,44 @@ class Main:
     cleanedData = []
     metaData = []
     outputData = []
+
     def __init__(self):
         start_time = time.time()
 
-        self.filePath = '../data/01aJourneyDataExtract10Jan16-23Jan16.csv'
-        # self.filePath = './data/test.csv'
-        self.metaFilePath = self.filePath[:-4]
-        self.metaFilePath = self.metaFilePath + "_META.csv"
+        self.filePath1 = '../data/cycle/01aJourneyDataExtract10Jan16-23Jan16.csv'
+        self.filePath2 = '../data/oyster card/Nov09JnyExport.csv'
 
-        retrieveObj = Retrieve.Retrieve(self.filePath)
-        self.data = retrieveObj.getData("csv")
-        auditObj = Audit.Audit(self.data)
-        self.auditData = auditObj.getAuditedData()
-        tflCycleHireObj = tflCycle.tflCycle(self.auditData)
-        self.cleanedData = tflCycleHireObj.cleanData()
+        self.filePath = [self.filePath1, self.filePath2]
 
-        metaDataObj = MetaData.MetaData(self.data, self.filePath)
-        self.metaData = metaDataObj.getData()
-        newAuditObj = Audit.Audit(self.cleanedData)
-        self.cleanedData = newAuditObj.getAuditedData()
-        # print(self.cleanedData)
-        self.outputData.append([self.metaData])
-        self.outputData.append([self.cleanedData])
+        for i in range(2):
+            self.metaFilePath = self.filePath[i][:-4]
+            self.metaFilePath = self.metaFilePath + "_META.csv"
+            retrieveObj = Retrieve.Retrieve(self.filePath[i])
+            self.data = retrieveObj.getData("csv")
+            auditObj = Audit.Audit(self.data)
+            self.auditData = auditObj.getAuditedData()
+            if i == 0:
+                cleanOrganiseObj = tflCycle.tflCycle(self.auditData)
+            elif i == 1:
+                cleanOrganiseObj = tflOysterCount.tflOysterCount(self.auditData)
+            else:
+                cleanOrganiseObj = tflStationCount.tflStationCount(self.auditData)
+            self.cleanedData = cleanOrganiseObj.cleanData()
+            metaDataObj = MetaData.MetaData(self.data, self.filePath[i])
+            self.metaData = metaDataObj.getData()
+            newAuditObj = Audit.Audit(self.cleanedData)
+            self.cleanedData = newAuditObj.getAuditedData()
+            self.outputData.append([self.metaData])
+            self.outputData.append([self.cleanedData])
+            print(self.outputData[1])
+            Output.Output(self.outputData, self.metaFilePath, 2)
 
-        Output.Output(self.outputData, self.metaFilePath, 2)
+            Match.Match(self.metaFilePath)
 
-        Match.Match(self.metaFilePath)
+            elapsed_time = time.time() - start_time
+            print("Time = " + str(elapsed_time) + "\n")
+            self.outputData = []
 
-        elapsed_time = time.time() - start_time
-        print("Time = " + str(elapsed_time) + "\n")
 
 if __name__ == "__main__":
     Main()

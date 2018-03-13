@@ -11,9 +11,14 @@ class MetaData:
     metaData = []
     def __init__(self,dataFromFile,filePath):
         self.dataFromFile = []
+        self.header = []
+        self.fileDetails = []
+        self.metaTags = []
+        self.metaData = []
         self.header = dataFromFile[0]
         self.dataFromFile = dataFromFile[1:]
         self.filePath = filePath
+
 
     def getFileDetails(self):
         data = os.stat(self.filePath)
