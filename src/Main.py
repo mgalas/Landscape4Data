@@ -1,5 +1,5 @@
 import time
-from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise
+from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise, tflCycle
 
 
 class Main:
@@ -13,7 +13,7 @@ class Main:
     def __init__(self):
         start_time = time.time()
 
-        self.filePath = './data/01aJourneyDataExtract10Jan16-23Jan16.csv'
+        self.filePath = '../data/01aJourneyDataExtract10Jan16-23Jan16.csv'
         # self.filePath = './data/test.csv'
         self.metaFilePath = self.filePath[:-4]
         self.metaFilePath = self.metaFilePath + "_META.csv"
@@ -22,9 +22,8 @@ class Main:
         self.data = retrieveObj.getData("csv")
         auditObj = Audit.Audit(self.data)
         self.auditData = auditObj.getAuditedData()
-
-        cleanOrganiseObj = CleanOrganise.CleanOrganise(self.auditData)
-        self.cleanedData = cleanOrganiseObj.cleanData(5)
+        tflCycleHireObj = tflCycle.tflCycle(self.auditData)
+        self.cleanedData = tflCycleHireObj.cleanData()
 
         metaDataObj = MetaData.MetaData(self.data, self.filePath)
         self.metaData = metaDataObj.getData()
