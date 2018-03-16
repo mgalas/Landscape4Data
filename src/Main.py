@@ -1,5 +1,5 @@
 import time
-from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise, tflCycle, tflStationCount, tflOysterCount
+from src import Output, Match, Audit, MetaData, Retrieve, CleanOrganise, tflCycle, tflOysterCount
 
 
 class Main:
@@ -28,10 +28,8 @@ class Main:
             self.auditData = auditObj.getAuditedData()
             if i == 0:
                 cleanOrganiseObj = tflCycle.tflCycle(self.auditData)
-            elif i == 1:
-                cleanOrganiseObj = tflOysterCount.tflOysterCount(self.auditData)
             else:
-                cleanOrganiseObj = tflStationCount.tflStationCount(self.auditData)
+                cleanOrganiseObj = tflOysterCount.tflOysterCount(self.auditData)
             self.cleanedData = cleanOrganiseObj.cleanData()
             metaDataObj = MetaData.MetaData(self.data, self.filePath[i])
             self.metaData = metaDataObj.getData()
@@ -39,7 +37,6 @@ class Main:
             self.cleanedData = newAuditObj.getAuditedData()
             self.outputData.append([self.metaData])
             self.outputData.append([self.cleanedData])
-            print(self.outputData[1])
             Output.Output(self.outputData, self.metaFilePath, 2)
 
             Match.Match(self.metaFilePath)
