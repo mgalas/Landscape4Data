@@ -37,9 +37,7 @@ class tflCycle(CleanOrganise):
                 lat = res.get('lat')
                 lon = res.get('lon')
         else:
-
-            lat, lon = apiDataFromCache[1].split("#")
-
+            lat, lon = apiDataFromCache[1].rstrip('\n').split("#")
         return ([lat, lon])
 
     def cleanData(self):
@@ -63,5 +61,6 @@ class tflCycle(CleanOrganise):
         #     sortedItem.append(nodeID)
             # print(sortedItem)
         print("Data Cleaned and Organised.")
+        # print(self.organisedData)
         return (self.organisedData)
 

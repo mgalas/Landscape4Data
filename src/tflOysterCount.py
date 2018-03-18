@@ -4,7 +4,7 @@ from src.CleanOrganise import CleanOrganise
 
 class tflOysterCount(CleanOrganise):
     def __init__(self, data):
-        super(tflOysterCount, self).__init__(data, '../data/cache/tfl_api_Oyster_cache.txt')
+        super(tflOysterCount, self).__init__(data, '../../data/cache/tfl_api_Oyster_cache.txt')
 
     def apiCall(self,item):
         indObj = None
@@ -38,7 +38,7 @@ class tflOysterCount(CleanOrganise):
                     lat = res.get('matches')[0].get('lat')
                     lon = res.get('matches')[0].get('lon')
             else:
-                lat, lon = apiDataFromCache[1].split("#")
+                lat, lon = apiDataFromCache[1].rstrip('\n').split("#")
 
         return ([lat, lon])
 
