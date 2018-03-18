@@ -19,6 +19,12 @@ class Main:
 
         self.filePath = [self.filePath1, self.filePath2]
 
+
+        # testing pupose
+        # self.filePath1 = '../data/01aJourneyDataExtract10Jan16-23Jan16.csv'
+        #  self.filePath1 = '../../data/test.csv'
+        # self.filePath = [self.filePath1]
+
         for i in range(2):
             self.metaFilePath = self.filePath[i][:-4]
             self.metaFilePath = self.metaFilePath + "_META.csv"
