@@ -5,6 +5,7 @@ from src.CleanOrganise import CleanOrganise
 class tflCycle(CleanOrganise):
     def __init__(self, data):
         super(tflCycle, self).__init__(data, '../data/cache/tfl_api_cache.txt')
+        # super(tflCycle, self).__init__(data, '../../data/cache/tfl_api_cache.txt')
 
     def apiCall(self,item):
         indObj = None
@@ -37,9 +38,7 @@ class tflCycle(CleanOrganise):
                 lat = res.get('lat')
                 lon = res.get('lon')
         else:
-
-            lat, lon = apiDataFromCache[1].split("#")
-
+            lat, lon = apiDataFromCache[1].rstrip('\n').split("#")
         return ([lat, lon])
 
     def cleanData(self):
@@ -63,5 +62,6 @@ class tflCycle(CleanOrganise):
         #     sortedItem.append(nodeID)
             # print(sortedItem)
         print("Data Cleaned and Organised.")
+        # print(self.organisedData)
         return (self.organisedData)
 

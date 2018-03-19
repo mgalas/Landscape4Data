@@ -43,7 +43,7 @@ class Match:
             for k, v in row.items():
                 if k != 'lat' and k != 'long' and v != '':
                     strv = str(v)
-                    strv.replace('\&', "n")
+                    strv = strv.replace('&', "and")
                     xmlData.write ('<tag k="%s" v="%s" />\n' %(k,strv))
             xmlData.write('  </node>\n' )
         xmlData.write('</osm>' + "\n")

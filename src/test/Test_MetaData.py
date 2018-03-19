@@ -11,28 +11,33 @@ class Test_MetaData (unittest.TestCase):
         ["Brick Lane Market, Shoreditch",1,51.522617,-0.071653,1322524169],
         ["Parsons Green Station, Parsons Green",1,51.475089,-0.201968,3662252439],
         ["Jubilee Street, Stepney",1,51.515975,-0.053177,395349093]]
-        self.filePath = './data/test_Meta.csv'
+        self.filePath = '../../data/test_Meta.csv'
+        self.metaDataObj= MetaData(self.data, self.filePath)
+        self.metaDataObjTwo= MetaData(self.data, self.filePath)
+        self.metaDataObjThree = MetaData(self.data, self.filePath)
 
 
+    def test_viewMetaTag(self):
+         # default <'station name','cycle','lat','long','id'> in the user input
+        self.assertEqual(self.metaDataObj.getData(), [['station name','cycle','lat','long','id']])
 
     def test_listMetaTags(self):
-        print("is the initial list empty")
-        # print(self.metaDataObj.listMetaTags())
-        metaDataObj = MetaData(self.data, self.filePath)
-        self.assertTrue(metaDataObj.listMetaTags() ==  None)
+        # test that the initial list is empty
+        #  print(self.metaDataObj.listMetaTags())
+        self.assertTrue(self.metaDataObj.metaTags ==  [])
 
-    # def test_addMetaTag(self):
-    #      metaDataobj2 = MetaData(self.data, self.filePath)
-    #      metaDataobj2.addMetaTag()
-    #      #type <'station name','cycle occurence','lat','long','id','extra'> in the user input
-    #      self.assertEqual(metaDataObj2.metaTags, ['station name','cycle occurence','lat','long','id','extra'])
-    # def test_removeMetaTag(self):
-    #     # print(self.metaDataObj.metaTags)
-    #     #delete the 6th position
-    #     # self.metaDataObj.removeMetaTag()
-    #     self.assertEqual(self.metaDataObj.metaTags,  ['station name','cycle occurence','lat','long','id'])
-    # def test_getData(self):
-    #     self.assertEqual(self.metaDataObj.getData()[0:4],  ['station name','cycle occurence','lat','long','id'])
+    def test_addMetaTags(self):
+        print('Test To Add ')
+        self.metaDataObjTwo.addMetaTag()
+        self.assertFalse(self.metaDataObjTwo.metaTags == [])
+        print(self.metaDataObjTwo.metaTags)
+
+    def test_deleteMetaTags(self):
+        print(" Test To Remove A New Tag ")
+        self.metaDataObjThree.addMetaTag()
+        self.metaDataObjThree.removeMetaTag()
+        self.assertTrue(self.metaDataObjThree.metaTags == [])
+
 
 if __name__ == "__main__":
     unittest.main()
