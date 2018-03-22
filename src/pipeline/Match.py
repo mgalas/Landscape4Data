@@ -1,4 +1,4 @@
-#class to convert csv file in the current folder to osm xml format.
+
 import csv
 
 class Match:

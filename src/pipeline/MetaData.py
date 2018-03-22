@@ -26,14 +26,14 @@ class MetaData:
         moreInput = True
         while moreInput:
 
-            response = input("Menu: \n1. List Meta Tags \n2. Add Meta Tag \n3. Remove Meta Tag \n4. Confirm \n\n")
-            if response == 1:
+            response = raw_input("Menu: \n1. List Meta Tags \n2. Add Meta Tag \n3. Remove Meta Tag \n4. Confirm \n\n")
+            if response == "1":
                 self.listMetaTags()
-            elif response == 2:
+            elif response == "2":
                 self.addMetaTag()
-            elif response == 3:
+            elif response == "3":
                 self.removeMetaTag()
-            elif response == 4:
+            elif response == "4":
                 moreInput = False
             else:
                 print("Invalid Input, Please try again")
@@ -48,13 +48,13 @@ class MetaData:
         newTag = None
         while not isCorrect:
             try:
-                newTag = input("Please type in Meta Tag in between two quotation marks and hit enter \n\n")
+                newTag = raw_input("Please type in Meta Tag in between two quotation marks and hit enter \n\n")
                 print(newTag)
             except SyntaxError:
                 print("Please try again")
                 self.addMetaTag()
-            confirm = input("Is this correct? \nType 1 for yes 2 for no \n\n")
-            if confirm == 1:
+            confirm = raw_input("Is this correct? \nType 1 for yes 2 for no \n\n")
+            if confirm == "1":
                 isCorrect = True
         self.metaTags.append(newTag)
 
@@ -63,10 +63,10 @@ class MetaData:
         index = 0
         while not isDone:
             self.listMetaTags()
-            index = int(input("Please type in the position of the meta tag to be removed. \n\n"))
+            index = int(raw_input("Please type in the position of the meta tag to be removed. \n\n"))
             print(self.metaTags[index-1])
-            confirm = input("Is this the tag you wish to delete? \nType 1 for yes 2 for no \n\n")
-            if confirm == 1:
+            confirm = raw_input("Is this the tag you wish to delete? \nType 1 for yes 2 for no \n\n")
+            if confirm == "1":
                 isDone = True
         del self.metaTags[index-1]
 
