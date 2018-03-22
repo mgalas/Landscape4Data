@@ -10,6 +10,7 @@ class Main:
     cleanedData = []
     metaData = []
     outputData = []
+    outputMeta= []
 
     def __init__(self):
         start_time = time.time()
@@ -25,6 +26,8 @@ class Main:
         for i in range(2):
             self.metaFilePath = self.filePath[i][:-4]
             self.metaFilePath = self.metaFilePath + "_META.csv"
+            self.cleanOrganisedPath = self.filePath[i][:-4]
+            self.cleanOrganisedPath = self.cleanOrganisedPath + "_CLEANED.csv"
             retrieveObj = src.pipeline.Retrieve.Retrieve(self.filePath[i])
             self.data = retrieveObj.getData("csv")
             auditObj = src.pipeline.Audit.Audit(self.data)
@@ -34,19 +37,23 @@ class Main:
             else:
                 cleanOrganiseObj = src.pipeline.tflOysterCount.tflOysterCount(self.auditData)
             self.cleanedData = cleanOrganiseObj.cleanData()
+
             metaDataObj = src.pipeline.MetaData.MetaData(self.data, self.filePath[i])
             self.metaData = metaDataObj.getData()
             newAuditObj = src.pipeline.Audit.Audit(self.cleanedData)
+
             self.cleanedData = newAuditObj.getAuditedData()
-            self.outputData.append([self.metaData])
             self.outputData.append([self.cleanedData])
-            src.pipeline.Output.Output(self.outputData, self.metaFilePath, 2)
+            src.pipeline.Output.Output(self.outputData, self.cleanOrganisedPath, 2)
+            src.pipeline.Match.Match(self.cleanOrganisedPath)
 
-            src.pipeline.Match.Match(self.metaFilePath)
-
+            self.outputMeta.append([self.metaData])
+            src.pipeline.Output.Output(self.outputMeta, self.metaFilePath, 2)
             elapsed_time = time.time() - start_time
+
             print("Time = " + str(elapsed_time) + "\n")
             self.outputData = []
+            self.outputMeta =[]
 
 
 if __name__ == "__main__":
