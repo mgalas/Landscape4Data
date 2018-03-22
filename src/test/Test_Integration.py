@@ -2,11 +2,12 @@ import unittest
 import requests
 from geopy.geocoders import Nominatim, get_geocoder_for_service
 from pathlib import Path
+import psycopg2
 
 class Test_Integration (unittest.TestCase):
     def setUp(self):
         self.item = "Frith Street, Soho"
-        self.input = Path('../../data/01aJourneyDataExtract10Jan16-23Jan16.csv')
+        self.input = Path('../../data/cycle/01aJourneyDataExtract10Jan16-23Jan16.csv')
 
     def test_TFLAPI(self):
         urlQueryid = self.item.replace(" ","%20")
@@ -23,6 +24,15 @@ class Test_Integration (unittest.TestCase):
 
     def test_InputFile(self):
         self.assertTrue(self.input.is_file())
+
+    def test_Server(self):
+        try:
+            conn = psycopg2.connect("host=udltest1.cs.ac.uk:5432 dbname=test user=aniraula")
+            cur = conn.cursor()
+            print(cur.execute('SELECT * FROM notes'))
+        except Exception as e:
+            print("ERROR")
+            print(e)
 
 if __name__ == "__main__":
     unittest.main()

@@ -63,9 +63,14 @@ class tflOysterCount(CleanOrganise):
         #     sortedItem.append(nodeID)
             # print(sortedItem)
         self.header = ['station name', 'cycle', 'lat', 'long']
-        print(self.header)
+        # print(self.header)
         self.organisedData.insert(0, self.header)
-        print("Data Cleaned and Organised.")
+        # print("Data Cleaned and Organised.")
         return (self.organisedData)
+
+    def oysterGroupCounter(self):
+        var = self.getGroupCounter()
+        # print(var)
+        return var
 
 

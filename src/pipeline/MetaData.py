@@ -73,8 +73,8 @@ class MetaData:
     def getData(self):
         print("Collecting Meta Data...")
         self.askForMetaTags()
-        self.fileDetails = self.getFileDetails()
-        self.metaData.append([self.fileDetails])
+        # self.fileDetails = self.getFileDetails()
+        # self.metaData.append([self.fileDetails])
         # self.metaTags = ['station name', 'cycle', 'lat', 'long', 'id']
         self.metaData.append(self.metaTags)
         print("Meta Data Collected.")

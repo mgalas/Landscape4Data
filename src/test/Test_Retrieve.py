@@ -2,7 +2,7 @@ import unittest, csv
 from src.pipeline.Retrieve import  Retrieve
 
 class Test_Retrieve (unittest.TestCase):
-    address = '../../data/test.csv'
+    address = '../../data/test/test.csv'
     def setUp (self):
         self.retrieve = Retrieve(self.address)
     #     self.emptyfile = Retrieve('./data/ti.csv')

@@ -17,7 +17,6 @@ class Main:
 
         self.filePath1 = '../../data/cycle/01aJourneyDataExtract10Jan16-23Jan16.csv'
         self.filePath2 = '../../data/oyster card/Nov09JnyExport.csv'
-
         self.filePath = [self.filePath1, self.filePath2]
 
 

@@ -34,10 +34,11 @@ class Test_CleanOrganise (unittest.TestCase):
     def test_cycle_grouping(self):
         # group Counter is added by one everytime there is an overlap of the bike id
         # the no. of overlap should equal to the number of rows of the original data minus one (as we remove the header) minus the cleaned data
-        self.assertEqual(self.cleanDataObj.getGroupCounter(), len(self.cycleData)-1 -len(self.cleanData))
+
+        self.assertEqual(self.cleanDataObj.cycleGroupCounter(), len(self.cycleData) -len(self.cleanData))
 
     def test_oyster_grouping(self):
-       self.assertEqual(self.cleanDataObj2.getGroupCounter(), len(self.oysterData) - 1 - len(self.cleanOysterData))
+       self.assertEqual(self.cleanDataObj2.oysterGroupCounter(), len(self.oysterData)  - len(self.cleanOysterData))
 
     def test_update_count(self):
         # brick lane market should have 2 occurrences
