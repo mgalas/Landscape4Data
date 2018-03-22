@@ -1,4 +1,4 @@
-<workflow-app xmlns="uri:oozie:workflow:0.4" name="python-wf">
+<workflow-app xmlns="uri:oozie:workflow:0.4" name="tfl_ETL_Pipeline">
     <start to="python-node"/>
     <action name="python-node">
         <shell xmlns="uri:oozie:shell-action:0.2">
@@ -11,14 +11,14 @@
                 </property>
             </configuration>
             <exec>Main.py</exec>
-	    <file>src/pipeline/Main.py</file>
+            <file>/user/tflETL/src/pipeline/Main.py</file>
             <capture-output/>
         </shell>
         <ok to="end"/>
         <error to="fail"/>
     </action>
     <kill name="fail">
-    <message>Python action failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+        <message>Python action failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
     </kill>
     <end name="end"/>
 </workflow-app>
