@@ -7,6 +7,7 @@ class Audit:
         self.auditData = []
 
 
+    # Removes rows even if one of the data items are blank
     def removeBlankRows(self):
         self.auditData = []
         for item in self.data:

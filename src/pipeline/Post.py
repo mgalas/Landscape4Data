@@ -1,15 +1,9 @@
-import hdfs
+"""
 
+    This Class has to be implemented, we were unable to do this part because of faulty servers. More Information is
+    available in our individual reports and project website.
 
-def main():
-    try:
-        client = hdfs.InsecureClient("hdfs://udltest3.cs.ucl.ac.uk:8020")
-        content = client.list('/user/tflETL')
-        print(content)
-    except Exception as e:
-        print("ERROR")
-        print(e)
-
-
-if __name__ == "__main__":
-    main()
+"""
+class Post:
+    def __init__(self):
+        pass

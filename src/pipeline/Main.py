@@ -23,29 +23,40 @@ class Main:
 
 
         for i in range(2):
+
+            # configuring pipeline for data retrieval
             self.metaFilePath = self.filePath[i][:-4]
             self.metaFilePath = self.metaFilePath + "_META.csv"
             self.cleanOrganisedPath = self.filePath[i][:-4]
             self.cleanOrganisedPath = self.cleanOrganisedPath + "_CLEANED.csv"
+
+            # data retrieval
             retrieveObj = src.pipeline.Retrieve.Retrieve(self.filePath[i])
             self.data = retrieveObj.getData("csv")
+
+            # data Audit
             auditObj = src.pipeline.Audit.Audit(self.data)
             self.auditData = auditObj.getAuditedData()
+
+            # cleaning and organising data
             if i == 0:
                 cleanOrganiseObj = src.pipeline.tflCycle.tflCycle(self.auditData)
             else:
                 cleanOrganiseObj = src.pipeline.tflOysterCount.tflOysterCount(self.auditData)
             self.cleanedData = cleanOrganiseObj.cleanData()
 
+            # generating Meta data
             metaDataObj = src.pipeline.MetaData.MetaData(self.data, self.filePath[i])
             self.metaData = metaDataObj.getData()
-            newAuditObj = src.pipeline.Audit.Audit(self.cleanedData)
 
+            # auditing data again
+            newAuditObj = src.pipeline.Audit.Audit(self.cleanedData)
             self.cleanedData = newAuditObj.getAuditedData()
+
+            # matching and outputting Data
             self.outputData.append([self.cleanedData])
             src.pipeline.Output.Output(self.outputData, self.cleanOrganisedPath, 2)
             src.pipeline.Match.Match(self.cleanOrganisedPath)
-
             self.outputMeta.append([self.metaData])
             src.pipeline.Output.Output(self.outputMeta, self.metaFilePath, 2)
             elapsed_time = time.time() - start_time

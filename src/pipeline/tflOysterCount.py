@@ -1,15 +1,19 @@
 import requests
 from CleanOrganise import CleanOrganise
 
+"""
+This is for TFL's Oyster Count system
+"""
+
 
 class tflOysterCount(CleanOrganise):
     def __init__(self, data):
         super(tflOysterCount, self).__init__(data, '../../data/cache/tfl_api_Oyster_cache.txt')
 
-    def apiCall(self,item):
+    def apiCall(self, item):
         indObj = None
         urlQueryid = item.replace(" ", "%20")
-        url = "https://api.tfl.gov.uk/StopPoint/Search?query="+urlQueryid+"&modes=tube&faresOnly=false&includeHubs=false&tflOperatedNationalRailStationsOnly=false&app_id=3ccf74d3&app_key=c9dcd95b35785f8c19a41ce2d384ea41"
+        url = "https://api.tfl.gov.uk/StopPoint/Search?query=" + urlQueryid + "&modes=tube&faresOnly=false&includeHubs=false&tflOperatedNationalRailStationsOnly=false&app_id=3ccf74d3&app_key=c9dcd95b35785f8c19a41ce2d384ea41"
         response = requests.get(url)
         try:
             indObj = response.json()
@@ -19,20 +23,17 @@ class tflOysterCount(CleanOrganise):
         if indObj is not None and indObj.get('matches') is not None:
             if not len(indObj.get('matches')) == 0:
                 self.addToCache(item, indObj.get('matches')[0])
-                return (indObj)
+                return indObj
         return None
-
-
-
 
     def getLatLon(self, stationName):
         lat = ''
         lon = ''
         if not stationName == "Bus":
             apiDataFromCache = self.getFromCache(stationName)
-            if apiDataFromCache == None:
+            if apiDataFromCache is None:
                 apiDataFromCache = [False, '']
-            if apiDataFromCache[0] == False:
+            if not apiDataFromCache[0]:
                 res = self.apiCall(stationName)
                 if not (res == None):
                     lat = res.get('matches')[0].get('lat')
@@ -40,8 +41,7 @@ class tflOysterCount(CleanOrganise):
             else:
                 lat, lon = apiDataFromCache[1].rstrip('\n').split("#")
 
-        return ([lat, lon])
-
+        return [lat, lon]
 
     def cleanData(self):
         print("Cleaning and Organising Data...")
@@ -52,7 +52,7 @@ class tflOysterCount(CleanOrganise):
         print('\t retrieving lat and long')
         for sortedItem in self.organisedData:
             self.counter += 1
-            latlon= self.getLatLon(sortedItem[0])
+            latlon = self.getLatLon(sortedItem[0])
             sortedItem.append(latlon[0])
             sortedItem.append(latlon[1])
 
@@ -61,16 +61,14 @@ class tflOysterCount(CleanOrganise):
         #     coordString =str(sortedItem[2]) + "," + str(sortedItem[3])
         #     nodeID = self.getNodeID(coordString)
         #     sortedItem.append(nodeID)
-            # print(sortedItem)
+        # print(sortedItem)
         self.header = ['station name', 'cycle', 'lat', 'long']
         # print(self.header)
         self.organisedData.insert(0, self.header)
         # print("Data Cleaned and Organised.")
-        return (self.organisedData)
+        return self.organisedData
 
     def oysterGroupCounter(self):
         var = self.getGroupCounter()
         # print(var)
         return var
-
-

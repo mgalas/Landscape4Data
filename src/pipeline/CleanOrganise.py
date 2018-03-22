@@ -2,7 +2,7 @@ import abc, six
 # from src import Cache
 import Cache
 
-@six.add_metaclass(abc.ABCMeta)
+@six.add_metaclass(abc.ABCMeta) # Needed to denote it is an abstract class
 class CleanOrganise():
     dataFromFile = []
     organisedData = []
@@ -10,7 +10,7 @@ class CleanOrganise():
     groupCounter = 0 #for testing
     cacheObj = None
 
-    @abc.abstractmethod
+    @abc.abstractmethod # Needed to denote it is an abstract Class
     def __init__(self, d, cacheLocation):
         self.dataFromFile = []
         self.organisedData = []
@@ -22,7 +22,7 @@ class CleanOrganise():
         self.groupCounter = 0
         self.cacheObj = Cache.Cache(cacheLocation)
 
-    def inObj (self, queryValue):
+    def isInCleanData (self, queryValue):
         pos = 0
         if (len(self.organisedData) == 0):
             return False,pos
@@ -32,16 +32,16 @@ class CleanOrganise():
             pos += 1
         return False,pos
 
-    def addInObj (self,newValue):
+    def addInCleanData (self,newValue):
         self.organisedData.append([newValue,1])
 
     def updateCount (self,pos):
         self.organisedData[pos][1] += 1
 
     def groupStationID (self,groupValue):
-        boolVal,pos = self.inObj(groupValue)
+        boolVal,pos = self.isInCleanData(groupValue)
         if not boolVal:
-            self.addInObj(groupValue)
+            self.addInCleanData(groupValue)
         else:
             self.updateCount(pos)
             self.groupCounterPlus()

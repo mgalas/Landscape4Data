@@ -1,4 +1,6 @@
 import os
+
+
 class MetaData:
     filePath = ''
     fileName = ''
@@ -7,7 +9,8 @@ class MetaData:
     fileDetails = []
     metaTags = []
     metaData = []
-    def __init__(self,dataFromFile,filePath):
+
+    def __init__(self, dataFromFile, filePath):
         self.dataFromFile = []
         self.header = []
         self.fileDetails = []
@@ -17,11 +20,11 @@ class MetaData:
         self.dataFromFile = dataFromFile[1:]
         self.filePath = filePath
 
-
     def getFileDetails(self):
         data = os.stat(self.filePath)
         return data
 
+    # user defined meta tags
     def askForMetaTags(self):
         moreInput = True
         while moreInput:
@@ -37,7 +40,6 @@ class MetaData:
                 moreInput = False
             else:
                 print("Invalid Input, Please try again")
-
 
     def listMetaTags(self):
         print("List of Meta Tags")
@@ -64,11 +66,11 @@ class MetaData:
         while not isDone:
             self.listMetaTags()
             index = int(raw_input("Please type in the position of the meta tag to be removed. \n\n"))
-            print(self.metaTags[index-1])
+            print(self.metaTags[index - 1])
             confirm = raw_input("Is this the tag you wish to delete? \nType 1 for yes 2 for no \n\n")
             if confirm == "1":
                 isDone = True
-        del self.metaTags[index-1]
+        del self.metaTags[index - 1]
 
     def getData(self):
         print("Collecting Meta Data...")
@@ -78,4 +80,4 @@ class MetaData:
         # self.metaTags = ['station name', 'cycle', 'lat', 'long', 'id']
         self.metaData.append(self.metaTags)
         print("Meta Data Collected.")
-        return (self.metaData)
+        return self.metaData
