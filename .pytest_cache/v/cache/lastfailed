@@ -1,0 +1,10 @@
+{
+  "src/test/Test_CleanOrganise.py::Test_CleanOrganise::test_cycle_grouping": true,
+  "src/test/Test_CleanOrganise.py::Test_CleanOrganise::test_lat_value": true,
+  "src/test/Test_CleanOrganise.py::Test_CleanOrganise::test_lon_value": true,
+  "src/test/Test_CleanOrganise.py::Test_CleanOrganise::test_oyster_grouping": true,
+  "src/test/Test_CleanOrganise.py::Test_CleanOrganise::test_update_count": true,
+  "src/test/Test_Integration.py::TestClass::()::test_one": true,
+  "src/test/Test_MetaData.py::Test_MetaData::test_addMetaTags": true,
+  "src/test/Test_MetaData.py::Test_MetaData::test_deleteMetaTags": true
+}
