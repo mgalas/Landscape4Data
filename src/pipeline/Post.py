@@ -1,11 +1,11 @@
-import psycopg2
+import hdfs
 
 
 def main():
     try:
-        conn = psycopg2.connect("host=udltest1.cs.ac.uk:5432 dbname=test user=aniraula")
-        cur = conn.cursor()
-        print(cur.execute('SELECT * FROM notes'))
+        client = hdfs.InsecureClient("hdfs://udltest3.cs.ucl.ac.uk:8020")
+        content = client.list('/user/tflETL')
+        print(content)
     except Exception as e:
         print("ERROR")
         print(e)
