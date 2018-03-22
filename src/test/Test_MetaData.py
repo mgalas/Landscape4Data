@@ -11,15 +11,15 @@ class Test_MetaData (unittest.TestCase):
         ["Brick Lane Market, Shoreditch",1,51.522617,-0.071653,1322524169],
         ["Parsons Green Station, Parsons Green",1,51.475089,-0.201968,3662252439],
         ["Jubilee Street, Stepney",1,51.515975,-0.053177,395349093]]
-        self.filePath = '../../data/test_Meta.csv'
+        self.filePath = '../../data/test/test_Meta.csv'
         self.metaDataObj= MetaData(self.data, self.filePath)
         self.metaDataObjTwo= MetaData(self.data, self.filePath)
         self.metaDataObjThree = MetaData(self.data, self.filePath)
 
 
     def test_viewMetaTag(self):
-         # default <'station name','cycle','lat','long','id'> in the user input
-        self.assertEqual(self.metaDataObj.getData(), [['station name','cycle','lat','long','id']])
+         # default in the user input
+        self.assertEqual(self.metaDataObj.getData(), [[]])
 
     def test_listMetaTags(self):
         # test that the initial list is empty

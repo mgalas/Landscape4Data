@@ -4,7 +4,7 @@ from CleanOrganise import CleanOrganise
 
 class tflOysterCount(CleanOrganise):
     def __init__(self, data):
-        super(tflOysterCount, self).__init__(data, '../data/cache/tfl_api_Oyster_cache.txt')
+        super(tflOysterCount, self).__init__(data, '../../data/cache/tfl_api_Oyster_cache.txt')
 
     def apiCall(self,item):
         indObj = None
@@ -63,9 +63,14 @@ class tflOysterCount(CleanOrganise):
         #     sortedItem.append(nodeID)
             # print(sortedItem)
         self.header = ['station name', 'cycle', 'lat', 'long']
-        print(self.header)
+        # print(self.header)
         self.organisedData.insert(0, self.header)
-        print("Data Cleaned and Organised.")
+        # print("Data Cleaned and Organised.")
         return (self.organisedData)
+
+    def oysterGroupCounter(self):
+        var = self.getGroupCounter()
+        # print(var)
+        return var
 
 

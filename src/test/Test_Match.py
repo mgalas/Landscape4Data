@@ -5,11 +5,11 @@ import xml.etree.ElementTree as ET
 
 class Test_MetaData (unittest.TestCase):
     def setUp(self):
-        self.metaFilePath = '../../data/test_META.csv'
-        self.expectedResultPath = '../../data/expectedXMLResult.osm'
-        self.osmFilePath = '../../data/test_META.osm'
+        self.metaFilePath = '../../data/test/test_META.csv'
+        self.expectedResultPath = '../../data/test/expectedXMLResult.osm'
+        self.osmFilePath = '../../data/test/test_META.osm'
         self.matchObj = Match(self.metaFilePath)
-        self.my_file = Path('../../data/test_META.osm')
+        self.my_file = Path('../../data/test/test_META.osm')
 
     def test_XMLProduced(self):
         #check that an osm file is produced
