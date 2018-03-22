@@ -1,18 +1,15 @@
-
-import sys
-import pandas as pd
-import hdfs
-import os
+import psycopg2
 
 
 def main():
     try:
-        client =hdfs.InsecureClient('http://udltest1.cs.ucl.ac.uk:50075')
-        status = client.status('dat/features')
-        print(status)
+        conn = psycopg2.connect("host=udltest1.cs.ac.uk:5432 dbname=test user=aniraula")
+        cur = conn.cursor()
+        print(cur.execute('SELECT * FROM notes'))
     except Exception as e:
         print("ERROR")
         print(e)
+
 
 if __name__ == "__main__":
     main()

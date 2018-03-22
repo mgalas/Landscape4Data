@@ -4,7 +4,7 @@ from CleanOrganise import CleanOrganise
 
 class tflOysterCount(CleanOrganise):
     def __init__(self, data):
-        super(tflOysterCount, self).__init__(data, '../../data/cache/tfl_api_Oyster_cache.txt')
+        super(tflOysterCount, self).__init__(data, '../data/cache/tfl_api_Oyster_cache.txt')
 
     def apiCall(self,item):
         indObj = None
