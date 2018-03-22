@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4673598-4b0c-4b30-afcb-ddba968fd676" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DataPipelineTFL.iml" afterPath="$PROJECT_DIR$/.idea/DataPipelineTFL.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DataPipelineTFL.egg-info/PKG-INFO" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataPipelineTFL.egg-info/SOURCES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataPipelineTFL.egg-info/dependency_links.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataPipelineTFL.egg-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/COB_London_InFuse2011/citations.rtf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/counts/multi-year-station-entry-and-exit-figures.xls" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/cycle/01aJourneyDataExtract10Jan16-23Jan16_META.osm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/output/out.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/oyster card/Nov09JnyExport_META.osm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pythonProj.egg-info/PKG-INFO" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pythonProj.egg-info/SOURCES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pythonProj.egg-info/dependency_links.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pythonProj.egg-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pipeline/Match.py" afterPath="$PROJECT_DIR$/src/pipeline/Match.py" />
-      <change beforePath="$PROJECT_DIR$/src/pipeline/MetaData.py" afterPath="$PROJECT_DIR$/src/pipeline/MetaData.py" />
-      <change beforePath="$PROJECT_DIR$/src/pipeline/tflOysterCount.py" afterPath="$PROJECT_DIR$/src/pipeline/tflOysterCount.py" />
-    </list>
+    <list default="true" id="e4673598-4b0c-4b30-afcb-ddba968fd676" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +11,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pipeline/Main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
-              <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merge_osm_cyclelayer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/visualisation/merge_osm_cyclelayer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2268">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,11 +128,6 @@
             <path>
               <item name="DataPipelineTFL" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonProj" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataPipelineTFL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonProj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -150,6 +135,12 @@
               <item name="pythonProj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pipeline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataPipelineTFL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonProj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="visualisation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -401,7 +392,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32154697" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45082873" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45082873" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -425,7 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tflStationCount.py" />
     <entry file="file://$PROJECT_DIR$/src/Post.py" />
     <entry file="file://$PROJECT_DIR$/src/Main.py" />
     <entry file="file://$PROJECT_DIR$/src/Match.py" />
@@ -606,10 +596,18 @@
     <entry file="file://$PROJECT_DIR$/src/pipeline/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
-          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visualisation/merge_osm_cyclelayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
