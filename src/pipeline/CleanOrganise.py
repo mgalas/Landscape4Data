@@ -1,14 +1,16 @@
-import abc, requests, json
-from src import Cache
+import abc, six
+# from src import Cache
+import Cache
 
-
-class CleanOrganise(metaclass=abc.ABCMeta):
+@six.add_metaclass(abc.ABCMeta)
+class CleanOrganise():
     dataFromFile = []
     organisedData = []
     header = []
     groupCounter = 0 #for testing
     cacheObj = None
 
+    @abc.abstractmethod
     def __init__(self, d, cacheLocation):
         self.dataFromFile = []
         self.organisedData = []
@@ -43,7 +45,6 @@ class CleanOrganise(metaclass=abc.ABCMeta):
         else:
             self.updateCount(pos)
             self.groupCounterPlus()
-
 
 
     def addToCache(self,stName, dataFromApi):

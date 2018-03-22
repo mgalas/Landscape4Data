@@ -1,15 +1,14 @@
 import unittest
-from src.Match import Match
+from src.pipeline.Match import Match
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
 class Test_MetaData (unittest.TestCase):
     def setUp(self):
         self.metaFilePath = '../../data/test_META.csv'
-        self.expectedResultPath = '../../data/expecteXMLResult.osm'
+        self.expectedResultPath = '../../data/expectedXMLResult.osm'
         self.osmFilePath = '../../data/test_META.osm'
         self.matchObj = Match(self.metaFilePath)
-        self.matchObj.csv2osm()
         self.my_file = Path('../../data/test_META.osm')
 
     def test_XMLProduced(self):

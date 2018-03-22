@@ -1,10 +1,10 @@
 import requests
-from src.CleanOrganise import CleanOrganise
+from CleanOrganise import CleanOrganise
 
 
 class tflCycle(CleanOrganise):
     def __init__(self, data):
-        super(tflCycle, self).__init__(data, '../data/cache/tfl_api_cache.txt')
+        super(tflCycle, self).__init__(data, '../../data/cache/tfl_api_cache.txt')
         # super(tflCycle, self).__init__(data, '../../data/cache/tfl_api_cache.txt')
 
     def apiCall(self,item):
