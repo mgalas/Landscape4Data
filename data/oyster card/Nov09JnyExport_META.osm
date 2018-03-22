@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osm version="0.6" generator="csvtoosm">
+  <node id="0" action="create" lat="51.481850" lon="-0.112439"  visible="true">
+<tag k="station name" v="Oval" />
+<tag k="cycle" v="735" />
+<tag k="id" v="None" />
+  </node>
+  <node id="1" action="create" lat="51.611053" lon="-0.423829"  visible="true">
+<tag k="station name" v="Northwood" />
+<tag k="cycle" v="143" />
+<tag k="id" v="None" />
+  </node>
+  <node id="2" action="create" lat="51.495812" lon="-0.143826"  visible="true">
+<tag k="station name" v="Victoria" />
+<tag k="cycle" v="3646" />
+<tag k="id" v="None" />
+  </node>
+  <node id="3" action="create" lat="51.592901" lon="-0.381161"  visible="true">
+<tag k="station name" v="Pinner" />
+<tag k="cycle" v="195" />
+<tag k="id" v="None" />
+  </node>
+  <node id="4" action="create" lat="51.515037" lon="-0.072384"  visible="true">
+<tag k="station name" v="Aldgate" />
+<tag k="cycle" v="225" />
+<tag k="id" v="None" />
+  </node>
+  <node id="5" action="create" lat="51.514029" lon="0.008025"  visible="true">
+<tag k="station name" v="Canning Town" />
+<tag k="cycle" v="787" />
+<tag k="id" v="None" />
+  </node>
+  <node id="6" action="create" lat="51.435678" lon="-0.159736"  visible="true">
+<tag k="station name" v="Tooting Bec" />
+<tag k="cycle" v="709" />
+<tag k="id" v="None" />
+  </node>
+  <node id="7" action="create" lat="51.505881" lon="-0.086807"  visible="true">
+<tag k="station name" v="London Bridge" />
+<tag k="cycle" v="3334" />
+<tag k="id" v="None" />
+  </node>
+  <node id="8" action="create" lat="51.459205" lon="-0.211000"  visible="true">
+<tag k="station name" v="East Putney" />
+<tag k="cycle" v="657" />
+<tag k="id" v="None" />
+  </node>
+  <node id="9" action="create" lat="51.443259" lon="-0.152707"  visible="true">
+<tag k="station name" v="Balham" />
+<tag k="cycle" v="1311" />
+<tag k="id" v="None" />
+  </node>
+  <node id="10" action="create" lat="51.582948" lon="-0.019842"  visible="true">
+<tag k="station name" v="Walthamstow Central" />
+<tag k="cycle" v="1265" />
+<tag k="id" v="None" />
+  </node>
+  <node id="11" action="create" lat="51.516981" lon="-0.176160"  visible="true">
+<tag k="station name" v="Paddington" />
+<tag k="cycle" v="1240" />
+<tag k="id" v="None" />
+  </node>
+  <node id="12" action="create" lat="51.461742" lon="-0.138317"  visible="true">
+<tag k="station name" v="Clapham Common" />
+<tag k="cycle" v="1479" />
+<tag k="id" v="None" />
+  </node>
+  <node id="13" action="create" lat="51.549146" lon="-0.221537"  visible="true">
+<tag k="station name" v="Willesden Green" />
+<tag k="cycle" v="792" />
+<tag k="id" v="None" />
+  </node>
+  <node id="14" action="create" lat="51.452654" lon="-0.147582"  visible="true">
+<tag k="station name" v="Clapham South" />
+<tag k="cycle" v="1051" />
+<tag k="id" v="None" />
+  </node>
+  <node id="15" action="create" lat="51.539413" lon="0.080988"  visible="true">
+<tag k="station name" v="Barking" />
+<tag k="cycle" v="908" />
+<tag k="id" v="None" />
+  </node>
+  <node id="16" action="create" lat="51.511451" lon="-0.090357"  visible="true">
+<tag k="station name" v="Cannon Street" />
+<tag k="cycle" v="111" />
+<tag k="id" v="None" />
+  </node>
+  <node id="17" action="create" lat="51.546803" lon="-0.204105"  visible="true">
+<tag k="station name" v="Kilburn" />
+<tag k="cycle" v="798" />
+<tag k="id" v="None" />
+  </node>
+  <node id="18" action="create" lat="51.504269" lon="-0.113356"  visible="true">
+<tag k="station name" v="Waterloo" />
+<tag k="cycle" v="1932" />
+<tag k="id" v="None" />
+  </node>
+  <node id="19" action="create" lat="51.590272" lon="-0.102953"  visible="true">
+<tag k="station name" v="Turnpike Lane" />
+<tag k="cycle" v="1158" />
+<tag k="id" v="None" />
+  </node>
+  <node id="20" action="create" lat="51.565478" lon="-0.134819"  visible="true">
+<tag k="station name" v="Archway" />
+<tag k="cycle" v="656" />
+<tag k="id" v="None" />
+  </node>
+  <node id="21" action="create" lat="51.494094" lon="-0.174138"  visible="true">
+<tag k="station name" v="South Kensington" />
+<tag k="cycle" v="1432" />
+<tag k="id" v="None" />
+  </node>
+  <node id="22" action="create" lat="51.546269" lon="-0.103538"  visible="true">
+<tag k="station name" v="Highbury" />
+<tag k="cycle" v="1333" />
+<tag k="id" v="None" />
+  </node>
+  <node id="23" action="create" lat="51.553986" lon="-0.249837"  visible="true">
+<tag k="station name" v="Neasden" />
+<tag k="cycle" v="193" />
+<tag k="id" v="None" />
+  </node>
+  <node id="24" action="create" lat="51.480081" lon="-0.195422"  visible="true">
+<tag k="station name" v="Fulham Broadway" />
+<tag k="cycle" v="796" />
+<tag k="id" v="None" />
+  </node>
+  <node id="25" action="create" lat="51.510050" lon="-0.133798"  visible="true">
+<tag k="station name" v="Piccadilly Circus" />
+<tag k="cycle" v="1766" />
+<tag k="id" v="None" />
+  </node>
+  <node id="26" action="create" lat="51.548519" lon="-0.118493"  visible="true">
+<tag k="station name" v="Caledonian Road" />
+<tag k="cycle" v="673" />
+<tag k="id" v="None" />
+  </node>
+  <node id="27" action="create" lat="51.564778" lon="-0.105876"  visible="true">
+<tag k="station name" v="Finsbury Park" />
+<tag k="cycle" v="1861" />
+<tag k="id" v="None" />
+  </node>
+  <node id="28" action="create" lat="51.547533" lon="-0.191357"  visible="true">
+<tag k="station name" v="West Hampstead" />
+<tag k="cycle" v="784" />
+<tag k="id" v="None" />
+  </node>
+  <node id="29" action="create" lat="51.576544" lon="0.066185"  visible="true">
+<tag k="station name" v="Gants Hill" />
+<tag k="cycle" v="514" />
+<tag k="id" v="None" />
+  </node>
+  <node id="30" action="create" lat="51.471295" lon="-0.366578"  visible="true">
+<tag k="station name" v="Hounslow Central" />
+<tag k="cycle" v="396" />
+<tag k="id" v="None" />
+  </node>
+  <node id="31" action="create" lat="51.502005" lon="-0.226715"  visible="true">
+<tag k="station name" v="Goldhawk Road" />
+<tag k="cycle" v="167" />
+<tag k="id" v="None" />
+  </node>
+  <node id="32" action="create" lat="51.500474" lon="0.004295"  visible="true">
+<tag k="station name" v="North Greenwich" />
+<tag k="cycle" v="1418" />
+<tag k="id" v="None" />
+  </node>
+  <node id="33" action="create" lat="51.513424" lon="-0.158953"  visible="true">
+<tag k="station name" v="Marble Arch" />
+<tag k="cycle" v="626" />
+<tag k="id" v="None" />
+  </node>
+  <node id="34" action="create" lat="51.494505" lon="-0.099185"  visible="true">
+<tag k="station name" v="Elephant and Castle" />
+<tag k="cycle" v="1477" />
+<tag k="id" v="None" />
+  </node>
+  <node id="35" action="create" lat="51.523840" lon="-0.144262"  visible="true">
+<tag k="station name" v="Great Portland St" />
+<tag k="cycle" v="282" />
+<tag k="id" v="None" />
+  </node>
+  <node id="36" action="create" lat="51.541508" lon="-0.002410"  visible="true">
+<tag k="station name" v="Stratford" />
+<tag k="cycle" v="2673" />
+<tag k="id" v="None" />
+  </node>
+  <node id="37" action="create" lat="51.527365" lon="-0.132754"  visible="true">
+<tag k="station name" v="Euston" />
+<tag k="cycle" v="1002" />
+<tag k="id" v="None" />
+  </node>
+  <node id="38" action="create" lat="51.488337" lon="-0.105963"  visible="true">
+<tag k="station name" v="Kennington" />
+<tag k="cycle" v="586" />
+<tag k="id" v="None" />
+  </node>
+  <node id="39" action="create" lat="51.556589" lon="-0.005523"  visible="true">
+<tag k="station name" v="Leyton" />
+<tag k="cycle" v="1254" />
+<tag k="id" v="None" />
+  </node>
+  <node id="40" action="create" lat="51.586768" lon="-0.041185"  visible="true">
+<tag k="station name" v="Blackhorse Road" />
+<tag k="cycle" v="642" />
+<tag k="id" v="None" />
+  </node>
+  <node id="41" action="create" lat="51.607034" lon="-0.124235"  visible="true">
+<tag k="station name" v="Bounds Green" />
+<tag k="cycle" v="751" />
+<tag k="id" v="None" />
+  </node>
+  <node id="42" action="create" lat="51.532796" lon="-0.105992"  visible="true">
+<tag k="station name" v="Angel" />
+<tag k="cycle" v="1345" />
+<tag k="id" v="None" />
+  </node>
+  <node id="43" action="create" lat="51.514993" lon="-0.302131"  visible="true">
+<tag k="station name" v="Ealing Broadway" />
+<tag k="cycle" v="1557" />
+<tag k="id" v="None" />
+  </node>
+  <node id="44" action="create" lat="51.581786" lon="-0.316946"  visible="true">
+<tag k="station name" v="Kenton" />
+<tag k="cycle" v="126" />
+<tag k="id" v="None" />
+  </node>
+  <node id="45" action="create" lat="51.492270" lon="-0.156377"  visible="true">
+<tag k="station name" v="Sloane Square" />
+<tag k="cycle" v="885" />
+<tag k="id" v="None" />
+  </node>
+  <node id="46" action="create" lat="51.576506" lon="-0.397373"  visible="true">
+<tag k="station name" v="Eastcote" />
+<tag k="cycle" v="172" />
+<tag k="id" v="None" />
+  </node>
+  <node id="47" action="create" lat="51.568324" lon="0.008194"  visible="true">
+<tag k="station name" v="Leytonstone" />
+<tag k="cycle" v="1144" />
+<tag k="id" v="None" />
+  </node>
+  <node id="48" action="create" lat="51.427630" lon="-0.168374"  visible="true">
+<tag k="station name" v="Tooting Broadway" />
+<tag k="cycle" v="1543" />
+<tag k="id" v="None" />
+  </node>
+  <node id="49" action="create" lat="51.591907" lon="0.027338"  visible="true">
+<tag k="station name" v="Woodford" />
+<tag k="cycle" v="499" />
+<tag k="id" v="None" />
+  </node>
+  <node id="50" action="create" lat="51.511386" lon="-0.128426"  visible="true">
+<tag k="station name" v="Leicester Square" />
+<tag k="cycle" v="1871" />
+<tag k="id" v="None" />
+  </node>
+  <node id="51" action="create" lat="51.495148" lon="-0.254555"  visible="true">
+<tag k="station name" v="Turnham Green" />
+<tag k="cycle" v="666" />
+<tag k="id" v="None" />
+  </node>
+  <node id="52" action="create" lat="51.494316" lon="-0.182658"  visible="true">
+<tag k="station name" v="Gloucester Road" />
+<tag k="cycle" v="1109" />
+<tag k="id" v="None" />
+  </node>
+  <node id="53" action="create" lat="51.546565" lon="-0.477949"  visible="true">
+<tag k="station name" v="Uxbridge" />
+<tag k="cycle" v="353" />
+<tag k="id" v="None" />
+  </node>
+  <node id="54" action="create" lat="51.509128" lon="-0.196104"  visible="true">
+<tag k="station name" v="Notting Hill Gate" />
+<tag k="cycle" v="1344" />
+<tag k="id" v="None" />
+  </node>
+  <node id="55" action="create" lat="51.402142" lon="-0.194839"  visible="true">
+<tag k="station name" v="Morden" />
+<tag k="cycle" v="715" />
+<tag k="id" v="None" />
+  </node>
+  <node id="56" action="create" lat="51.517940" lon="-0.083162"  visible="true">
+<tag k="station name" v="Liverpool Street" />
+<tag k="cycle" v="2890" />
+<tag k="id" v="None" />
+  </node>
+  <node id="57" action="create" lat="51.594188" lon="-0.286219"  visible="true">
+<tag k="station name" v="Queensbury" />
+<tag k="cycle" v="215" />
+<tag k="id" v="None" />
+  </node>
+  <node id="58" action="create" lat="51.582931" lon="-0.073306"  visible="true">
+<tag k="station name" v="Seven Sisters" />
+<tag k="cycle" v="1222" />
+<tag k="id" v="None" />
+  </node>
+  <node id="59" action="create" lat="51.580678" lon="0.021440"  visible="true">
+<tag k="station name" v="Snaresbrook" />
+<tag k="cycle" v="225" />
+<tag k="id" v="None" />
+  </node>
+  <node id="60" action="create" lat="51.512284" lon="-0.187938"  visible="true">
+<tag k="station name" v="Bayswater" />
+<tag k="cycle" v="272" />
+<tag k="id" v="None" />
+  </node>
+  <node id="61" action="create" lat="51.597479" lon="-0.109886"  visible="true">
+<tag k="station name" v="Wood Green" />
+<tag k="cycle" v="1149" />
+<tag k="id" v="None" />
+  </node>
+  <node id="62" action="create" lat="51.489097" lon="-0.133761"  visible="true">
+<tag k="station name" v="Pimlico" />
+<tag k="cycle" v="505" />
+<tag k="id" v="None" />
+  </node>
+  <node id="63" action="create" lat="51.534521" lon="-0.173948"  visible="true">
+<tag k="station name" v="St Johns Wood" />
+<tag k="cycle" v="519" />
+<tag k="id" v="None" />
+  </node>
+  <node id="64" action="create" lat="51.501055" lon="-0.192792"  visible="true">
+<tag k="station name" v="High Street Kens" />
+<tag k="cycle" v="458" />
+<tag k="id" v="None" />
+  </node>
+  <node id="65" action="create" lat="51.536305" lon="-0.257774"  visible="true">
+<tag k="station name" v="Harlesden" />
+<tag k="cycle" v="193" />
+<tag k="id" v="None" />
+  </node>
+  <node id="66" action="create" lat="51.532556" lon="-0.243006"  visible="true">
+<tag k="station name" v="Willesden Junction" />
+<tag k="cycle" v="299" />
+<tag k="id" v="None" />
+  </node>
+  <node id="67" action="create" lat="51.518247" lon="-0.111583"  visible="true">
+<tag k="station name" v="Chancery Lane" />
+<tag k="cycle" v="439" />
+<tag k="id" v="None" />
+  </node>
+  <node id="68" action="create" lat="51.519498" lon="-0.059858"  visible="true">
+<tag k="station name" v="Whitechapel" />
+<tag k="cycle" v="734" />
+<tag k="id" v="None" />
+  </node>
+  <node id="69" action="create" lat="51.473213" lon="-0.356474"  visible="true">
+<tag k="station name" v="Hounslow East" />
+<tag k="cycle" v="476" />
+<tag k="id" v="None" />
+  </node>
+  <node id="70" action="create" lat="51.514304" lon="-0.149723"  visible="true">
+<tag k="station name" v="Bond Street" />
+<tag k="cycle" v="969" />
+<tag k="id" v="None" />
+  </node>
+  <node id="71" action="create" lat="51.465135" lon="-0.130016"  visible="true">
+<tag k="station name" v="Clapham North" />
+<tag k="cycle" v="800" />
+<tag k="id" v="None" />
+  </node>
+  <node id="72" action="create" lat="51.546825" lon="-0.179845"  visible="true">
+<tag k="station name" v="Finchley Road" />
+<tag k="cycle" v="805" />
+<tag k="id" v="None" />
+  </node>
+  <node id="73" action="create" lat="51.539292" lon="-0.142740"  visible="true">
+<tag k="station name" v="Camden Town" />
+<tag k="cycle" v="1306" />
+<tag k="id" v="None" />
+  </node>
+  <node id="74" action="create" lat="51.503976" lon="-0.104940"  visible="true">
+<tag k="station name" v="Southwark" />
+<tag k="cycle" v="321" />
+<tag k="id" v="None" />
+  </node>
+  <node id="75" action="create" lat="51.498808" lon="-0.112315"  visible="true">
+<tag k="station name" v="Lambeth North" />
+<tag k="cycle" v="200" />
+<tag k="id" v="None" />
+  </node>
+  <node id="76" action="create" lat="51.520214" lon="-0.105054"  visible="true">
+<tag k="station name" v="Farringdon" />
+<tag k="cycle" v="558" />
+<tag k="id" v="None" />
+  </node>
+  <node id="77" action="create" lat="51.525122" lon="-0.033640"  visible="true">
+<tag k="station name" v="Mile End" />
+<tag k="cycle" v="1451" />
+<tag k="id" v="None" />
+  </node>
+  <node id="78" action="create" lat="51.503734" lon="-0.019121"  visible="true">
+<tag k="station name" v="Canary Wharf" />
+<tag k="cycle" v="2310" />
+<tag k="id" v="None" />
+  </node>
+  <node id="79" action="create" lat="51.526065" lon="-0.088193"  visible="true">
+<tag k="station name" v="Old Street" />
+<tag k="cycle" v="1458" />
+<tag k="id" v="None" />
+  </node>
+  <node id="80" action="create" lat="51.501603" lon="-0.125984"  visible="true">
+<tag k="station name" v="Westminster" />
+<tag k="cycle" v="439" />
+<tag k="id" v="None" />
+  </node>
+  <node id="81" action="create" lat="51.535340" lon="0.035263"  visible="true">
+<tag k="station name" v="Upton Park" />
+<tag k="cycle" v="901" />
+<tag k="id" v="None" />
+  </node>
+  <node id="82" action="create" lat="51.556822" lon="-0.138433"  visible="true">
+<tag k="station name" v="Tufnell Park" />
+<tag k="cycle" v="629" />
+<tag k="id" v="None" />
+  </node>
+  <node id="83" action="create" lat="51.522883" lon="-0.157130"  visible="true">
+<tag k="station name" v="Baker Street" />
+<tag k="cycle" v="1122" />
+<tag k="id" v="None" />
+  </node>
+  <node id="84" action="create" lat="51.520275" lon="-0.097993"  visible="true">
+<tag k="station name" v="Barbican" />
+<tag k="cycle" v="385" />
+<tag k="id" v="None" />
+  </node>
+  <node id="85" action="create" lat="51.538948" lon="0.051186"  visible="true">
+<tag k="station name" v="East Ham" />
+<tag k="cycle" v="1208" />
+<tag k="id" v="None" />
+  </node>
+  <node id="86" action="create" lat="51.558655" lon="-0.107457"  visible="true">
+<tag k="station name" v="Arsenal" />
+<tag k="cycle" v="500" />
+<tag k="id" v="None" />
+  </node>
+  <node id="87" action="create" lat="51.550409" lon="-0.140545"  visible="true">
+<tag k="station name" v="Kentish Town" />
+<tag k="cycle" v="694" />
+<tag k="id" v="None" />
+  </node>
+  <node id="88" action="create" lat="51.572259" lon="-0.194039"  visible="true">
+<tag k="station name" v="Golders Green" />
+<tag k="cycle" v="908" />
+<tag k="id" v="None" />
+  </node>
+  <node id="89" action="create" lat="51.507143" lon="-0.205679"  visible="true">
+<tag k="station name" v="Holland Park" />
+<tag k="cycle" v="314" />
+<tag k="id" v="None" />
+  </node>
+  <node id="90" action="create" lat="51.491745" lon="-0.275276"  visible="true">
+<tag k="station name" v="Gunnersbury" />
+<tag k="cycle" v="248" />
+<tag k="id" v="None" />
+  </node>
+  <node id="91" action="create" lat="51.463152" lon="-0.301448"  visible="true">
+<tag k="station name" v="Richmond" />
+<tag k="cycle" v="504" />
+<tag k="id" v="None" />
+  </node>
+  <node id="92" action="create" lat="51.534443" lon="-0.204882"  visible="true">
+<tag k="station name" v="Queens Park" />
+<tag k="cycle" v="611" />
+<tag k="id" v="None" />
+  </node>
+  <node id="93" action="create" lat="51.475277" lon="-0.201170"  visible="true">
+<tag k="station name" v="Parsons Green" />
+<tag k="cycle" v="490" />
+<tag k="id" v="None" />
+  </node>
+  <node id="94" action="create" lat="51.462961" lon="-0.114531"  visible="true">
+<tag k="station name" v="Brixton" />
+<tag k="cycle" v="2151" />
+<tag k="id" v="None" />
+  </node>
+  <node id="95" action="create" lat="51.520599" lon="-0.134361"  visible="true">
+<tag k="station name" v="Goodge Street" />
+<tag k="cycle" v="291" />
+<tag k="id" v="None" />
+  </node>
+  <node id="96" action="create" lat="51.521602" lon="-0.163013"  visible="true">
+<tag k="station name" v="Marylebone" />
+<tag k="cycle" v="397" />
+<tag k="id" v="None" />
+  </node>
+  <node id="97" action="create" lat="51.556946" lon="-0.336435"  visible="true">
+<tag k="station name" v="Sudbury Hill" />
+<tag k="cycle" v="216" />
+<tag k="id" v="None" />
+  </node>
+  <node id="98" action="create" lat="51.576243" lon="0.045360"  visible="true">
+<tag k="station name" v="Redbridge" />
+<tag k="cycle" v="240" />
+<tag k="id" v="None" />
+  </node>
+  <node id="99" action="create" lat="51.647726" lon="-0.132182"  visible="true">
+<tag k="station name" v="Oakwood" />
+<tag k="cycle" v="295" />
+<tag k="id" v="None" />
+  </node>
+  <node id="100" action="create" lat="51.515224" lon="-0.141903"  visible="true">
+<tag k="station name" v="Oxford Circus" />
+<tag k="cycle" v="1973" />
+<tag k="id" v="None" />
+  </node>
+  <node id="101" action="create" lat="51.468262" lon="-0.208731"  visible="true">
+<tag k="station name" v="Putney Bridge" />
+<tag k="cycle" v="565" />
+<tag k="id" v="None" />
+  </node>
+  <node id="102" action="create" lat="51.602774" lon="-0.264048"  visible="true">
+<tag k="station name" v="Burnt Oak" />
+<tag k="cycle" v="357" />
+<tag k="id" v="None" />
+  </node>
+  <node id="103" action="create" lat="51.507819" lon="-0.126137"  visible="true">
+<tag k="station name" v="Charing Cross" />
+<tag k="cycle" v="813" />
+<tag k="id" v="None" />
+  </node>
+  <node id="104" action="create" lat="51.630597" lon="-0.179210"  visible="true">
+<tag k="station name" v="Totteridge" />
+<tag k="cycle" v="174" />
+<tag k="id" v="None" />
+  </node>
+  <node id="105" action="create" lat="51.544118" lon="-0.153388"  visible="true">
+<tag k="station name" v="Chalk Farm" />
+<tag k="cycle" v="629" />
+<tag k="id" v="None" />
+  </node>
+  <node id="106" action="create" lat="51.517580" lon="-0.120475"  visible="true">
+<tag k="station name" v="Holborn" />
+<tag k="cycle" v="1120" />
+<tag k="id" v="None" />
+  </node>
+  <node id="107" action="create" lat="51.523524" lon="-0.259755"  visible="true">
+<tag k="station name" v="North Acton" />
+<tag k="cycle" v="385" />
+<tag k="id" v="None" />
+  </node>
+  <node id="108" action="create" lat="51.494627" lon="-0.267972"  visible="true">
+<tag k="station name" v="Chiswick Park" />
+<tag k="cycle" v="198" />
+<tag k="id" v="None" />
+  </node>
+  <node id="109" action="create" lat="51.588315" lon="-0.060240"  visible="true">
+<tag k="station name" v="Tottenham Hale" />
+<tag k="cycle" v="558" />
+<tag k="id" v="None" />
+  </node>
+  <node id="110" action="create" lat="51.527123" lon="-0.284341"  visible="true">
+<tag k="station name" v="Park Royal" />
+<tag k="cycle" v="145" />
+<tag k="id" v="None" />
+  </node>
+  <node id="111" action="create" lat="51.513093" lon="-0.124436"  visible="true">
+<tag k="station name" v="Covent Garden" />
+<tag k="cycle" v="597" />
+<tag k="id" v="None" />
+  </node>
+  <node id="112" action="create" lat="51.521858" lon="-0.046596"  visible="true">
+<tag k="station name" v="Stepney Green" />
+<tag k="cycle" v="343" />
+<tag k="id" v="None" />
+  </node>
+  <node id="113" action="create" lat="51.510700" lon="-0.085969"  visible="true">
+<tag k="station name" v="Monument" />
+<tag k="cycle" v="320" />
+<tag k="id" v="None" />
+  </node>
+  <node id="114" action="create" lat="51.527222" lon="-0.055506"  visible="true">
+<tag k="station name" v="Bethnal Green" />
+<tag k="cycle" v="1626" />
+<tag k="id" v="None" />
+  </node>
+  <node id="115" action="create" lat="51.608229" lon="-0.209986"  visible="true">
+<tag k="station name" v="Mill Hill East" />
+<tag k="cycle" v="71" />
+<tag k="id" v="None" />
+  </node>
+  <node id="116" action="create" lat="51.543681" lon="-0.174894"  visible="true">
+<tag k="station name" v="Swiss Cottage" />
+<tag k="cycle" v="545" />
+<tag k="id" v="None" />
+  </node>
+  <node id="117" action="create" lat="51.490311" lon="-0.213427"  visible="true">
+<tag k="station name" v="Barons Court" />
+<tag k="cycle" v="666" />
+<tag k="id" v="None" />
+  </node>
+  <node id="118" action="create" lat="51.571972" lon="-0.295107"  visible="true">
+<tag k="station name" v="Preston Road" />
+<tag k="cycle" v="281" />
+<tag k="id" v="None" />
+  </node>
+  <node id="119" action="create" lat="51.552320" lon="-0.296642"  visible="true">
+<tag k="station name" v="Wembley Central" />
+<tag k="cycle" v="281" />
+<tag k="id" v="None" />
+  </node>
+  <node id="120" action="create" lat="51.531341" lon="0.017451"  visible="true">
+<tag k="station name" v="Plaistow" />
+<tag k="cycle" v="568" />
+<tag k="id" v="None" />
+  </node>
+  <node id="121" action="create" lat="51.577532" lon="-0.145857"  visible="true">
+<tag k="station name" v="Highgate" />
+<tag k="cycle" v="702" />
+<tag k="id" v="None" />
+  </node>
+  <node id="122" action="create" lat="51.421505" lon="-0.206444"  visible="true">
+<tag k="station name" v="Wimbledon" />
+<tag k="cycle" v="808" />
+<tag k="id" v="None" />
+  </node>
+  <node id="123" action="create" lat="51.466747" lon="-0.423191"  visible="true">
+<tag k="station name" v="Hatton Cross" />
+<tag k="cycle" v="219" />
+<tag k="id" v="None" />
+  </node>
+  <node id="124" action="create" lat="51.576650" lon="-0.213622"  visible="true">
+<tag k="station name" v="Brent Cross" />
+<tag k="cycle" v="238" />
+<tag k="id" v="None" />
+  </node>
+  <node id="125" action="create" lat="51.434573" lon="-0.199719"  visible="true">
+<tag k="station name" v="Wimbledon Park" />
+<tag k="cycle" v="211" />
+<tag k="id" v="None" />
+  </node>
+  <node id="126" action="create" lat="51.507058" lon="-0.122666"  visible="true">
+<tag k="station name" v="Embankment" />
+<tag k="cycle" v="771" />
+<tag k="id" v="None" />
+  </node>
+  <node id="127" action="create" lat="51.511959" lon="-0.224297"  visible="true">
+<tag k="station name" v="White City" />
+<tag k="cycle" v="378" />
+<tag k="id" v="None" />
+  </node>
+  <node id="128" action="create" lat="51.558560" lon="0.235809"  visible="true">
+<tag k="station name" v="Upminster Bridge" />
+<tag k="cycle" v="39" />
+<tag k="id" v="None" />
+  </node>
+  <node id="129" action="create" lat="51.563198" lon="-0.279262"  visible="true">
+<tag k="station name" v="Wembley Park" />
+<tag k="cycle" v="692" />
+<tag k="id" v="None" />
+  </node>
+  <node id="130" action="create" lat="51.618014" lon="-0.185420"  visible="true">
+<tag k="station name" v="Woodside Park" />
+<tag k="cycle" v="218" />
+<tag k="id" v="None" />
+  </node>
+  <node id="131" action="create" lat="51.503035" lon="-0.152441"  visible="true">
+<tag k="station name" v="Hyde Park Corner" />
+<tag k="cycle" v="226" />
+<tag k="id" v="None" />
+  </node>
+  <node id="132" action="create" lat="51.544096" lon="0.166017"  visible="true">
+<tag k="station name" v="Dagenham East" />
+<tag k="cycle" v="174" />
+<tag k="id" v="None" />
+  </node>
+  <node id="133" action="create" lat="51.510312" lon="-0.187152"  visible="true">
+<tag k="station name" v="Queensway" />
+<tag k="cycle" v="590" />
+<tag k="id" v="None" />
+  </node>
+  <node id="134" action="create" lat="51.526940" lon="-0.025128"  visible="true">
+<tag k="station name" v="Bow Road" />
+<tag k="cycle" v="518" />
+<tag k="id" v="None" />
+  </node>
+  <node id="135" action="create" lat="51.548236" lon="-0.368699"  visible="true">
+<tag k="station name" v="Northolt" />
+<tag k="cycle" v="385" />
+<tag k="id" v="None" />
+  </node>
+  <node id="136" action="create" lat="51.418160" lon="-0.178086"  visible="true">
+<tag k="station name" v="Colliers Wood" />
+<tag k="cycle" v="553" />
+<tag k="id" v="None" />
+  </node>
+  <node id="137" action="create" lat="51.472184" lon="-0.122644"  visible="true">
+<tag k="station name" v="Stockwell" />
+<tag k="cycle" v="1082" />
+<tag k="id" v="None" />
+  </node>
+  <node id="138" action="create" lat="51.492063" lon="-0.193378"  visible="true">
+<tag k="station name" v="Earls Court" />
+<tag k="cycle" v="1712" />
+<tag k="id" v="None" />
+  </node>
+  <node id="139" action="create" lat="51.536717" lon="-0.323446"  visible="true">
+<tag k="station name" v="Perivale" />
+<tag k="cycle" v="239" />
+<tag k="id" v="None" />
+  </node>
+  <node id="140" action="create" lat="51.600921" lon="-0.192527"  visible="true">
+<tag k="station name" v="Finchley Central" />
+<tag k="cycle" v="562" />
+<tag k="id" v="None" />
+  </node>
+  <node id="141" action="create" lat="51.477069" lon="-0.285148"  visible="true">
+<tag k="station name" v="Kew Gardens" />
+<tag k="cycle" v="225" />
+<tag k="id" v="None" />
+  </node>
+  <node id="142" action="create" lat="51.481274" lon="-0.352224"  visible="true">
+<tag k="station name" v="Osterley" />
+<tag k="cycle" v="258" />
+<tag k="id" v="None" />
+  </node>
+  <node id="143" action="create" lat="51.570738" lon="-0.096118"  visible="true">
+<tag k="station name" v="Manor House" />
+<tag k="cycle" v="1181" />
+<tag k="id" v="None" />
+  </node>
+  <node id="144" action="create" lat="51.510140" lon="-0.288265"  visible="true">
+<tag k="station name" v="Ealing Common" />
+<tag k="cycle" v="339" />
+<tag k="id" v="None" />
+  </node>
+  <node id="145" action="create" lat="51.540627" lon="-0.299610"  visible="true">
+<tag k="station name" v="Alperton" />
+<tag k="cycle" v="268" />
+<tag k="id" v="None" />
+  </node>
+  <node id="146" action="create" lat="51.445073" lon="-0.206602"  visible="true">
+<tag k="station name" v="Southfields" />
+<tag k="cycle" v="456" />
+<tag k="id" v="None" />
+  </node>
+  <node id="147" action="create" lat="51.578481" lon="-0.318056"  visible="true">
+<tag k="station name" v="Northwick Park" />
+<tag k="cycle" v="238" />
+<tag k="id" v="None" />
+  </node>
+  <node id="148" action="create" lat="51.506947" lon="-0.142787"  visible="true">
+<tag k="station name" v="Green Park" />
+<tag k="cycle" v="1120" />
+<tag k="id" v="None" />
+  </node>
+  <node id="149" action="create" lat="51.521110" lon="-0.201065"  visible="true">
+<tag k="station name" v="Westbourne Park" />
+<tag k="cycle" v="231" />
+<tag k="id" v="None" />
+  </node>
+  <node id="150" action="create" lat="51.485739" lon="-0.123303"  visible="true">
+<tag k="station name" v="Vauxhall" />
+<tag k="cycle" v="1365" />
+<tag k="id" v="None" />
+  </node>
+  <node id="151" action="create" lat="51.542657" lon="-0.345789"  visible="true">
+<tag k="station name" v="Greenford" />
+<tag k="cycle" v="344" />
+<tag k="id" v="None" />
+  </node>
+  <node id="152" action="create" lat="51.585689" lon="0.088585"  visible="true">
+<tag k="station name" v="Barkingside" />
+<tag k="cycle" v="66" />
+<tag k="id" v="None" />
+  </node>
+  <node id="153" action="create" lat="51.541639" lon="0.147527"  visible="true">
+<tag k="station name" v="Dagenham Heathway" />
+<tag k="cycle" v="276" />
+<tag k="id" v="None" />
+  </node>
+  <node id="154" action="create" lat="51.511006" lon="-0.114260"  visible="true">
+<tag k="station name" v="Temple" />
+<tag k="cycle" v="197" />
+<tag k="id" v="None" />
+  </node>
+  <node id="155" action="create" lat="51.523073" lon="-0.124285"  visible="true">
+<tag k="station name" v="Russell Square" />
+<tag k="cycle" v="581" />
+<tag k="id" v="None" />
+  </node>
+  <node id="156" action="create" lat="51.525604" lon="-0.135829"  visible="true">
+<tag k="station name" v="Euston Square" />
+<tag k="cycle" v="338" />
+<tag k="id" v="None" />
+  </node>
+  <node id="157" action="create" lat="51.554093" lon="0.219116"  visible="true">
+<tag k="station name" v="Hornchurch" />
+<tag k="cycle" v="129" />
+<tag k="id" v="None" />
+  </node>
+  <node id="158" action="create" lat="51.587131" lon="-0.165012"  visible="true">
+<tag k="station name" v="East Finchley" />
+<tag k="cycle" v="763" />
+<tag k="id" v="None" />
+  </node>
+  <node id="159" action="create" lat="51.517505" lon="-0.288868"  visible="true">
+<tag k="station name" v="North Ealing" />
+<tag k="cycle" v="86" />
+<tag k="id" v="None" />
+  </node>
+  <node id="160" action="create" lat="51.591907" lon="0.027338"  visible="true">
+<tag k="station name" v="South Woodford" />
+<tag k="cycle" v="416" />
+<tag k="id" v="None" />
+  </node>
+  <node id="161" action="create" lat="51.530177" lon="-0.292704"  visible="true">
+<tag k="station name" v="Hanger Lane" />
+<tag k="cycle" v="361" />
+<tag k="id" v="None" />
+  </node>
+  <node id="162" action="create" lat="51.549775" lon="0.198640"  visible="true">
+<tag k="station name" v="Elm Park" />
+<tag k="cycle" v="173" />
+<tag k="id" v="None" />
+  </node>
+  <node id="163" action="create" lat="51.516612" lon="-0.247248"  visible="true">
+<tag k="station name" v="East Acton" />
+<tag k="cycle" v="396" />
+<tag k="id" v="None" />
+  </node>
+  <node id="164" action="create" lat="51.523263" lon="-0.183783"  visible="true">
+<tag k="station name" v="Warwick Avenue" />
+<tag k="cycle" v="509" />
+<tag k="id" v="None" />
+  </node>
+  <node id="165" action="create" lat="51.513395" lon="-0.089095"  visible="true">
+<tag k="station name" v="Bank" />
+<tag k="cycle" v="911" />
+<tag k="id" v="None" />
+  </node>
+  <node id="166" action="create" lat="51.560736" lon="-0.410710"  visible="true">
+<tag k="station name" v="Ruislip Gardens" />
+<tag k="cycle" v="85" />
+<tag k="id" v="None" />
+  </node>
+  <node id="167" action="create" lat="51.617199" lon="0.043647"  visible="true">
+<tag k="station name" v="Roding Valley" />
+<tag k="cycle" v="16" />
+<tag k="id" v="None" />
+  </node>
+  <node id="168" action="create" lat="51.501669" lon="-0.160508"  visible="true">
+<tag k="station name" v="Knightsbridge" />
+<tag k="cycle" v="543" />
+<tag k="id" v="None" />
+  </node>
+  <node id="169" action="create" lat="51.503057" lon="-0.280462"  visible="true">
+<tag k="station name" v="Acton Town" />
+<tag k="cycle" v="611" />
+<tag k="id" v="None" />
+  </node>
+  <node id="170" action="create" lat="51.674207" lon="-0.607590"  visible="true">
+<tag k="station name" v="Amersham" />
+<tag k="cycle" v="148" />
+<tag k="id" v="None" />
+  </node>
+  <node id="171" action="create" lat="51.575726" lon="0.090004"  visible="true">
+<tag k="station name" v="Newbury Park" />
+<tag k="cycle" v="348" />
+<tag k="id" v="None" />
+  </node>
+  <node id="172" action="create" lat="51.498053" lon="-0.049667"  visible="true">
+<tag k="station name" v="Canada Water" />
+<tag k="cycle" v="1292" />
+<tag k="id" v="None" />
+  </node>
+  <node id="173" action="create" lat="51.592216" lon="-0.334896"  visible="true">
+<tag k="station name" v="Harrow Wealdstone" />
+<tag k="cycle" v="254" />
+<tag k="id" v="None" />
+  </node>
+  <node id="174" action="create" lat="51.613653" lon="-0.274928"  visible="true">
+<tag k="station name" v="Edgware" />
+<tag k="cycle" v="414" />
+<tag k="id" v="None" />
+  </node>
+  <node id="175" action="create" lat="51.547533" lon="-0.191357"  visible="true">
+<tag k="station name" v="Hampstead" />
+<tag k="cycle" v="446" />
+<tag k="id" v="None" />
+  </node>
+  <node id="176" action="create" lat="51.515037" lon="-0.072384"  visible="true">
+<tag k="station name" v="Aldgate East" />
+<tag k="cycle" v="546" />
+<tag k="id" v="None" />
+  </node>
+  <node id="177" action="create" lat="51.519113" lon="-0.188748"  visible="true">
+<tag k="station name" v="Royal Oak" />
+<tag k="cycle" v="141" />
+<tag k="id" v="None" />
+  </node>
+  <node id="178" action="create" lat="51.641443" lon="0.055476"  visible="true">
+<tag k="station name" v="Loughton" />
+<tag k="cycle" v="237" />
+<tag k="id" v="None" />
+  </node>
+  <node id="179" action="create" lat="51.668109" lon="-0.560519"  visible="true">
+<tag k="station name" v="Chalfont and Latimer" />
+<tag k="cycle" v="92" />
+<tag k="id" v="None" />
+  </node>
+  <node id="180" action="create" lat="51.650541" lon="-0.194298"  visible="true">
+<tag k="station name" v="High Barnet" />
+<tag k="cycle" v="273" />
+<tag k="id" v="None" />
+  </node>
+  <node id="181" action="create" lat="51.583301" lon="-0.226424"  visible="true">
+<tag k="station name" v="Hendon Central" />
+<tag k="cycle" v="619" />
+<tag k="id" v="None" />
+  </node>
+  <node id="182" action="create" lat="51.509971" lon="-0.076546"  visible="true">
+<tag k="station name" v="Tower Hill" />
+<tag k="cycle" v="589" />
+<tag k="id" v="None" />
+  </node>
+  <node id="183" action="create" lat="51.514936" lon="-0.097567"  visible="true">
+<tag k="station name" v="St Pauls" />
+<tag k="cycle" v="590" />
+<tag k="id" v="None" />
+  </node>
+  <node id="184" action="create" lat="51.524951" lon="-0.138321"  visible="true">
+<tag k="station name" v="Warren Street" />
+<tag k="cycle" v="413" />
+<tag k="id" v="None" />
+  </node>
+  <node id="185" action="create" lat="51.584845" lon="-0.278790"  visible="true">
+<tag k="station name" v="Kingsbury" />
+<tag k="cycle" v="183" />
+<tag k="id" v="None" />
+  </node>
+  <node id="186" action="create" lat="51.550311" lon="-0.164648"  visible="true">
+<tag k="station name" v="Belsize Park" />
+<tag k="cycle" v="622" />
+<tag k="id" v="None" />
+  </node>
+  <node id="187" action="create" lat="51.564888" lon="-0.352492"  visible="true">
+<tag k="station name" v="South Harrow" />
+<tag k="cycle" v="193" />
+<tag k="id" v="None" />
+  </node>
+  <node id="188" action="create" lat="51.490459" lon="-0.206636"  visible="true">
+<tag k="station name" v="West Kensington" />
+<tag k="cycle" v="536" />
+<tag k="id" v="None" />
+  </node>
+  <node id="189" action="create" lat="51.518001" lon="-0.280980"  visible="true">
+<tag k="station name" v="West Acton" />
+<tag k="cycle" v="168" />
+<tag k="id" v="None" />
+  </node>
+  <node id="190" action="create" lat="51.538372" lon="0.101530"  visible="true">
+<tag k="station name" v="Upney" />
+<tag k="cycle" v="126" />
+<tag k="id" v="None" />
+  </node>
+  <node id="191" action="create" lat="51.626605" lon="0.046757"  visible="true">
+<tag k="station name" v="Buckhurst Hill" />
+<tag k="cycle" v="201" />
+<tag k="id" v="None" />
+  </node>
+  <node id="192" action="create" lat="51.415309" lon="-0.192005"  visible="true">
+<tag k="station name" v="South Wimbledon" />
+<tag k="cycle" v="423" />
+<tag k="id" v="None" />
+  </node>
+  <node id="193" action="create" lat="51.517449" lon="-0.210391"  visible="true">
+<tag k="station name" v="Ladbroke Grove" />
+<tag k="cycle" v="307" />
+<tag k="id" v="None" />
+  </node>
+  <node id="194" action="create" lat="51.511723" lon="-0.175494"  visible="true">
+<tag k="station name" v="Lancaster Gate" />
+<tag k="cycle" v="426" />
+<tag k="id" v="None" />
+  </node>
+  <node id="195" action="create" lat="51.494917" lon="-0.245704"  visible="true">
+<tag k="station name" v="Stamford Brook" />
+<tag k="cycle" v="296" />
+<tag k="id" v="None" />
+  </node>
+  <node id="196" action="create" lat="51.651520" lon="-0.149171"  visible="true">
+<tag k="station name" v="Cockfosters" />
+<tag k="cycle" v="134" />
+<tag k="id" v="None" />
+  </node>
+  <node id="197" action="create" lat="51.534979" lon="-0.194232"  visible="true">
+<tag k="station name" v="Kilburn Park" />
+<tag k="cycle" v="490" />
+<tag k="id" v="None" />
+  </node>
+  <node id="198" action="create" lat="51.640247" lon="-0.473273"  visible="true">
+<tag k="station name" v="Rickmansworth" />
+<tag k="cycle" v="171" />
+<tag k="id" v="None" />
+  </node>
+  <node id="199" action="create" lat="51.501199" lon="-0.093370"  visible="true">
+<tag k="station name" v="Borough" />
+<tag k="cycle" v="381" />
+<tag k="id" v="None" />
+  </node>
+  <node id="200" action="create" lat="51.647044" lon="-0.441718"  visible="true">
+<tag k="station name" v="Croxley" />
+<tag k="cycle" v="51" />
+<tag k="id" v="None" />
+  </node>
+  <node id="201" action="create" lat="51.632315" lon="-0.127816"  visible="true">
+<tag k="station name" v="Southgate" />
+<tag k="cycle" v="481" />
+<tag k="id" v="None" />
+  </node>
+  <node id="202" action="create" lat="51.616446" lon="-0.133062"  visible="true">
+<tag k="station name" v="Arnos Grove" />
+<tag k="cycle" v="469" />
+<tag k="id" v="None" />
+  </node>
+  <node id="203" action="create" lat="51.579710" lon="-0.353400"  visible="true">
+<tag k="station name" v="West Harrow" />
+<tag k="cycle" v="82" />
+<tag k="id" v="None" />
+  </node>
+  <node id="204" action="create" lat="51.540331" lon="0.127016"  visible="true">
+<tag k="station name" v="Becontree" />
+<tag k="cycle" v="203" />
+<tag k="id" v="None" />
+  </node>
+  <node id="205" action="create" lat="51.473469" lon="-0.386544"  visible="true">
+<tag k="station name" v="Hounslow West" />
+<tag k="cycle" v="267" />
+<tag k="id" v="None" />
+  </node>
+  <node id="206" action="create" lat="51.530545" lon="-0.225050"  visible="true">
+<tag k="station name" v="Kensal Green" />
+<tag k="cycle" v="237" />
+<tag k="id" v="None" />
+  </node>
+  <node id="207" action="create" lat="51.550815" lon="-0.315745"  visible="true">
+<tag k="station name" v="Sudbury Town" />
+<tag k="cycle" v="235" />
+<tag k="id" v="None" />
+  </node>
+  <node id="208" action="create" lat="51.569721" lon="-0.437816"  visible="true">
+<tag k="station name" v="West Ruislip" />
+<tag k="cycle" v="144" />
+<tag k="id" v="None" />
+  </node>
+  <node id="209" action="create" lat="51.552697" lon="-0.113244"  visible="true">
+<tag k="station name" v="Holloway Road" />
+<tag k="cycle" v="613" />
+<tag k="id" v="None" />
+  </node>
+  <node id="210" action="create" lat="51.499319" lon="-0.314719"  visible="true">
+<tag k="station name" v="Northfields" />
+<tag k="cycle" v="489" />
+<tag k="id" v="None" />
+  </node>
+  <node id="211" action="create" lat="51.629845" lon="-0.432454"  visible="true">
+<tag k="station name" v="Moor Park" />
+<tag k="cycle" v="53" />
+<tag k="id" v="None" />
+  </node>
+  <node id="212" action="create" lat="51.509669" lon="-0.224530"  visible="true">
+<tag k="station name" v="Wood Lane" />
+<tag k="cycle" v="98" />
+<tag k="id" v="None" />
+  </node>
+  <node id="213" action="create" lat="51.575501" lon="0.028527"  visible="true">
+<tag k="station name" v="Wanstead" />
+<tag k="cycle" v="224" />
+<tag k="id" v="None" />
+  </node>
+  <node id="214" action="create" lat="51.575147" lon="-0.371127"  visible="true">
+<tag k="station name" v="Rayners Lane" />
+<tag k="cycle" v="335" />
+<tag k="id" v="None" />
+  </node>
+  <node id="215" action="create" lat="51.534679" lon="-0.138789"  visible="true">
+<tag k="station name" v="Mornington Crescent" />
+<tag k="cycle" v="248" />
+<tag k="id" v="None" />
+  </node>
+  <node id="216" action="create" lat="51.501003" lon="-0.307424"  visible="true">
+<tag k="station name" v="South Ealing" />
+<tag k="cycle" v="403" />
+<tag k="id" v="None" />
+  </node>
+  <node id="217" action="create" lat="51.544041" lon="-0.275859"  visible="true">
+<tag k="station name" v="Stonebridge Park" />
+<tag k="cycle" v="144" />
+<tag k="id" v="None" />
+  </node>
+  <node id="218" action="create" lat="51.487168" lon="-0.195593"  visible="true">
+<tag k="station name" v="West Brompton" />
+<tag k="cycle" v="288" />
+<tag k="id" v="None" />
+  </node>
+  <node id="219" action="create" lat="51.595424" lon="-0.249919"  visible="true">
+<tag k="station name" v="Colindale" />
+<tag k="cycle" v="475" />
+<tag k="id" v="None" />
+  </node>
+  <node id="220" action="create" lat="51.518338" lon="-0.088627"  visible="true">
+<tag k="station name" v="Moorgate" />
+<tag k="cycle" v="699" />
+<tag k="id" v="None" />
+  </node>
+  <node id="221" action="create" lat="51.497953" lon="-0.063769"  visible="true">
+<tag k="station name" v="Bermondsey" />
+<tag k="cycle" v="656" />
+<tag k="id" v="None" />
+  </node>
+  <node id="222" action="create" lat="51.551955" lon="-0.239068"  visible="true">
+<tag k="station name" v="Dollis Hill" />
+<tag k="cycle" v="324" />
+<tag k="id" v="None" />
+  </node>
+  <node id="223" action="create" lat="51.529777" lon="-0.185758"  visible="true">
+<tag k="station name" v="Maida Vale" />
+<tag k="cycle" v="416" />
+<tag k="id" v="None" />
+  </node>
+  <node id="224" action="create" lat="51.494122" lon="-0.235881"  visible="true">
+<tag k="station name" v="Ravenscourt Park" />
+<tag k="cycle" v="277" />
+<tag k="id" v="None" />
+  </node>
+  <node id="225" action="create" lat="51.654249" lon="-0.518312"  visible="true">
+<tag k="station name" v="Chorleywood" />
+<tag k="cycle" v="71" />
+<tag k="id" v="None" />
+  </node>
+  <node id="226" action="create" lat="51.528178" lon="0.004997"  visible="true">
+<tag k="station name" v="West Ham" />
+<tag k="cycle" v="343" />
+<tag k="id" v="None" />
+  </node>
+  <node id="227" action="create" lat="51.609426" lon="-0.188362"  visible="true">
+<tag k="station name" v="West Finchley" />
+<tag k="cycle" v="126" />
+<tag k="id" v="None" />
+  </node>
+  <node id="228" action="create" lat="51.607701" lon="-0.294693"  visible="true">
+<tag k="station name" v="Canons Park" />
+<tag k="cycle" v="166" />
+<tag k="id" v="None" />
+  </node>
+  <node id="229" action="create" lat="51.613378" lon="0.092066"  visible="true">
+<tag k="station name" v="Grange Hill" />
+<tag k="cycle" v="24" />
+<tag k="id" v="None" />
+  </node>
+  <node id="230" action="create" lat="51.558659" lon="0.250855"  visible="true">
+<tag k="station name" v="Upminster" />
+<tag k="cycle" v="273" />
+<tag k="id" v="None" />
+  </node>
+  <node id="231" action="create" lat="51.512117" lon="-0.094009"  visible="true">
+<tag k="station name" v="Mansion House" />
+<tag k="cycle" v="266" />
+<tag k="id" v="None" />
+  </node>
+  <node id="232" action="create" lat="51.584872" lon="-0.362408"  visible="true">
+<tag k="station name" v="North Harrow" />
+<tag k="cycle" v="153" />
+<tag k="id" v="None" />
+  </node>
+  <node id="233" action="create" lat="51.513389" lon="-0.217799"  visible="true">
+<tag k="station name" v="Latimer Road" />
+<tag k="cycle" v="120" />
+<tag k="id" v="None" />
+  </node>
+  <node id="234" action="create" lat="51.600572" lon="-0.409464"  visible="true">
+<tag k="station name" v="Northwood Hills" />
+<tag k="cycle" v="108" />
+<tag k="id" v="None" />
+  </node>
+  <node id="235" action="create" lat="51.499544" lon="-0.133608"  visible="true">
+<tag k="station name" v="St James's Park" />
+<tag k="cycle" v="355" />
+<tag k="id" v="None" />
+  </node>
+  <node id="236" action="create" lat="51.553715" lon="-0.449828"  visible="true">
+<tag k="station name" v="Hillingdon" />
+<tag k="cycle" v="91" />
+<tag k="id" v="None" />
+  </node>
+  <node id="237" action="create" lat="51.645386" lon="0.083782"  visible="true">
+<tag k="station name" v="Debden" />
+<tag k="cycle" v="128" />
+<tag k="id" v="None" />
+  </node>
+  <node id="238" action="create" lat="51.561992" lon="-0.442001"  visible="true">
+<tag k="station name" v="Ickenham" />
+<tag k="cycle" v="60" />
+<tag k="id" v="None" />
+  </node>
+  <node id="239" action="create" lat="51.570229" lon="-0.308448"  visible="true">
+<tag k="station name" v="South Kenton" />
+<tag k="cycle" v="59" />
+<tag k="id" v="None" />
+  </node>
+  <node id="240" action="create" lat="51.556893" lon="-0.399076"  visible="true">
+<tag k="station name" v="Ruislip" />
+<tag k="cycle" v="113" />
+<tag k="id" v="None" />
+  </node>
+  <node id="241" action="create" lat="51.523344" lon="-0.146444"  visible="true">
+<tag k="station name" v="Regents Park" />
+<tag k="cycle" v="135" />
+<tag k="id" v="None" />
+  </node>
+  <node id="242" action="create" lat="51.573202" lon="-0.412973"  visible="true">
+<tag k="station name" v="Ruislip Manor" />
+<tag k="cycle" v="102" />
+<tag k="id" v="None" />
+  </node>
+  <node id="243" action="create" lat="51.693680" lon="0.113767"  visible="true">
+<tag k="station name" v="Epping" />
+<tag k="cycle" v="195" />
+<tag k="id" v="None" />
+  </node>
+  <node id="244" action="create" lat="51.603659" lon="0.093482"  visible="true">
+<tag k="station name" v="Hainault" />
+<tag k="cycle" v="207" />
+<tag k="id" v="None" />
+  </node>
+  <node id="245" action="create" lat="51.495635" lon="-0.324939"  visible="true">
+<tag k="station name" v="Boston Manor" />
+<tag k="cycle" v="200" />
+<tag k="id" v="None" />
+  </node>
+  <node id="246" action="create" lat="51.556893" lon="-0.399076"  visible="true">
+<tag k="station name" v="South Ruislip" />
+<tag k="cycle" v="177" />
+<tag k="id" v="None" />
+  </node>
+  <node id="247" action="create" lat="51.617916" lon="0.075041"  visible="true">
+<tag k="station name" v="Chigwell" />
+<tag k="cycle" v="19" />
+<tag k="id" v="None" />
+  </node>
+  <node id="248" action="create" lat="51.562580" lon="-0.303992"  visible="true">
+<tag k="station name" v="North Wembley" />
+<tag k="cycle" v="114" />
+<tag k="id" v="None" />
+  </node>
+  <node id="249" action="create" lat="51.595618" lon="0.091004"  visible="true">
+<tag k="station name" v="Fairlop" />
+<tag k="cycle" v="67" />
+<tag k="id" v="None" />
+  </node>
+  <node id="250" action="create" lat="51.619839" lon="-0.303266"  visible="true">
+<tag k="station name" v="Stanmore" />
+<tag k="cycle" v="204" />
+<tag k="id" v="None" />
+  </node>
+  <node id="251" action="create" lat="51.671759" lon="0.103085"  visible="true">
+<tag k="station name" v="Theydon Bois" />
+<tag k="cycle" v="64" />
+<tag k="id" v="None" />
+  </node>
+  <node id="252" action="create" lat="51.705208" lon="-0.611247"  visible="true">
+<tag k="station name" v="Chesham" />
+<tag k="cycle" v="36" />
+<tag k="id" v="None" />
+  </node>
+  <node id="253" action="create" lat="51.550815" lon="-0.315745"  visible="true">
+<tag k="station name" v="SudburyandHarrow Rd" />
+<tag k="cycle" v="1" />
+<tag k="id" v="None" />
+  </node>
+  <node id="254" action="create" lat="51.531683" lon="-0.123538"  visible="true">
+<tag k="station name" v="St Pancras International" />
+<tag k="cycle" v="9" />
+<tag k="id" v="None" />
+  </node>
+  <node id="255" action="create" lat="51.531683" lon="-0.123538"  visible="true">
+<tag k="station name" v="Kings Cross" />
+<tag k="cycle" v="3" />
+<tag k="id" v="None" />
+  </node>
+  <node id="256" action="create" lat="51.509613" lon="-0.104166"  visible="true">
+<tag k="station name" v="Blackfriars" />
+<tag k="cycle" v="1" />
+<tag k="id" v="None" />
+  </node>
+</osm>
