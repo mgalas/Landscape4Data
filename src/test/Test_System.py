@@ -1,10 +1,9 @@
 import unittest
-from src.Main import Main
 from pathlib import Path
 
 class Test_System(unittest.TestCase):
     def setUp(self):
-        #change the file path in main to '../../data/test.csv'
+        #change the file path in pipeline to '../../data/test.csv'
         # Main()
         # self.input = '../../data/test.csv'
         self.metaOutput= '../../data/test_META.csv'

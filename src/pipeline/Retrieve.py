@@ -12,7 +12,7 @@ class Retrieve:
 
     # Just For CSV files
     def getCSV(self):
-        with open(self.filePath, newline='') as csvfile:
+        with open(self.filePath) as csvfile:
             csvData = csv.reader(csvfile, delimiter=',')
             i = 0
             for item in csvData:

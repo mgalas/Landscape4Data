@@ -1,5 +1,6 @@
 import unittest
-from src.Audit import Audit
+from src.pipeline.Audit import Audit
+
 
 class Test_Audit (unittest.TestCase):
 

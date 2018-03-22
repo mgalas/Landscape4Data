@@ -1,5 +1,5 @@
 import unittest
-from src.MetaData import MetaData
+from src.pipeline.MetaData import MetaData
 
 class Test_MetaData (unittest.TestCase):
 

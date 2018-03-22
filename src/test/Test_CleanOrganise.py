@@ -1,7 +1,7 @@
 # for this test to work, you need to make sure the relative path to cache in the tflCycle.py and tflOyster.py are correct
 
 import unittest, requests
-from src import tflCycle, tflOysterCount
+from src.pipeline import tflCycle, tflOysterCount
 from geopy.geocoders import Nominatim
 
 class Test_CleanOrganise (unittest.TestCase):

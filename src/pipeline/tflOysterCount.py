@@ -1,5 +1,5 @@
 import requests
-from src.CleanOrganise import CleanOrganise
+from CleanOrganise import CleanOrganise
 
 
 class tflOysterCount(CleanOrganise):

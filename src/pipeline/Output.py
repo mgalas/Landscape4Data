@@ -13,7 +13,8 @@ class Output:
         self.writeToFile()
 
     def writeToFile(self):
-        with open(self.newfilePath, "w+", newline='') as outputFile:
+        # with open(self.newfilePath, "w+", newline='') as outputFile:
+        with open(self.newfilePath, "w+") as outputFile:
             csvWriter = csv.writer(outputFile, delimiter=',')
             if self.arrayType == 2:
                 for row in self.dataToBeWritten:
