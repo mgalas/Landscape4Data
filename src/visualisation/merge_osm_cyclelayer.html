@@ -142,7 +142,7 @@
           // distance: 40,
           source: new ol.source.Vector({
             // url: 'https://openlayers.org/en/v4.6.4/examples/data/kml/2012_OysterStations_Mag5.kml',
-           url:'../../data/01aJourneyDataExtract10Jan16-23Jan16_META.osm',
+            url:'../../data/cycle/01aJourneyDataExtract10Jan16-23Jan16_CLEANED.osm',
             format: new ol.format.OSMXML({
               extractStyles: false
             })
@@ -153,19 +153,19 @@
 
 
       var openCycleMapLayer = new ol.layer.Tile({
-        // source: new ol.source.OSM({
-        //   attributions: [
-        //     new ol.Attribution({
-        //       html: 'All maps &copy; ' +
-        //           '<a href="http://www.opencyclemap.org/">OpenCycleMap</a>'
-        //     }),
-        //     ol.source.OSM.ATTRIBUTION
-        //   ],
-        //   url: 'http://{a-c}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png'
-        // })
-          source: new ol.source.Stamen({
-          layer: 'toner'
-        })
+         source: new ol.source.OSM({
+           attributions: [
+             new ol.Attribution({
+               html: 'All maps &copy; ' +
+                   '<a href="http://www.opencyclemap.org/">OpenCycleMap</a>'
+             }),
+            ol.source.OSM.ATTRIBUTION
+          ],
+           url: 'http://{a-c}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png'
+         })
+          <!--source: new ol.source.Stamen({-->
+          <!--layer: 'watercolor'-->
+        <!--})-->
       });
 
       var london = ol.proj.transform([-0.12755, 51.507222], 'EPSG:4326', 'EPSG:3857');

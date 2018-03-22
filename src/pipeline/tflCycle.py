@@ -44,11 +44,13 @@ class tflCycle(CleanOrganise):
     def cleanData(self):
         print("Cleaning and Organising Data...")
         self.organisedData = []
+
+
         for item in self.dataFromFile:
             self.groupStationID(item[5])
-
             self.counter = 0
         print('\t retrieving lat and long')
+
         for sortedItem in self.organisedData:
             self.counter += 1
             latlon= self.getLatLon(sortedItem[0])
@@ -61,7 +63,10 @@ class tflCycle(CleanOrganise):
         #     nodeID = self.getNodeID(coordString)
         #     sortedItem.append(nodeID)
             # print(sortedItem)
+        self.header = ['station name', 'cycle', 'lat', 'long']
+        print(self.header)
+        self.organisedData.insert(0,self.header)
         print("Data Cleaned and Organised.")
-        # print(self.organisedData)
+        print(self.organisedData)
         return (self.organisedData)
 

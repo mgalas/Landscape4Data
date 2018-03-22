@@ -62,6 +62,9 @@ class tflOysterCount(CleanOrganise):
         #     nodeID = self.getNodeID(coordString)
         #     sortedItem.append(nodeID)
             # print(sortedItem)
+        self.header = ['station name', 'cycle', 'lat', 'long']
+        print(self.header)
+        self.organisedData.insert(0, self.header)
         print("Data Cleaned and Organised.")
         return (self.organisedData)
 

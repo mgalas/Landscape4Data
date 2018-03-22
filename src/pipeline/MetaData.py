@@ -1,6 +1,4 @@
 import os
-
-
 class MetaData:
     filePath = ''
     fileName = ''
@@ -27,14 +25,15 @@ class MetaData:
     def askForMetaTags(self):
         moreInput = True
         while moreInput:
+
             response = input("Menu: \n1. List Meta Tags \n2. Add Meta Tag \n3. Remove Meta Tag \n4. Confirm \n\n")
-            if response == "1":
+            if response == 1:
                 self.listMetaTags()
-            elif response == "2":
+            elif response == 2:
                 self.addMetaTag()
-            elif response == "3":
+            elif response == 3:
                 self.removeMetaTag()
-            elif response == "4":
+            elif response == 4:
                 moreInput = False
             else:
                 print("Invalid Input, Please try again")
@@ -48,10 +47,14 @@ class MetaData:
         isCorrect = False
         newTag = None
         while not isCorrect:
-            newTag = input("Please type in Meta Tag and hit enter \n\n")
-            print(newTag)
+            try:
+                newTag = input("Please type in Meta Tag in between two quotation marks and hit enter \n\n")
+                print(newTag)
+            except SyntaxError:
+                print("Please try again")
+                self.addMetaTag()
             confirm = input("Is this correct? \nType 1 for yes 2 for no \n\n")
-            if confirm == "1":
+            if confirm == 1:
                 isCorrect = True
         self.metaTags.append(newTag)
 
@@ -63,16 +66,16 @@ class MetaData:
             index = int(input("Please type in the position of the meta tag to be removed. \n\n"))
             print(self.metaTags[index-1])
             confirm = input("Is this the tag you wish to delete? \nType 1 for yes 2 for no \n\n")
-            if confirm == "1":
+            if confirm == 1:
                 isDone = True
         del self.metaTags[index-1]
 
     def getData(self):
         print("Collecting Meta Data...")
-        # self.askForMetaTags()
+        self.askForMetaTags()
         self.fileDetails = self.getFileDetails()
-        # self.metaData.append([self.fileDetails])
-        self.metaTags = ['station name', 'cycle', 'lat', 'long', 'id']
+        self.metaData.append([self.fileDetails])
+        # self.metaTags = ['station name', 'cycle', 'lat', 'long', 'id']
         self.metaData.append(self.metaTags)
         print("Meta Data Collected.")
         return (self.metaData)
